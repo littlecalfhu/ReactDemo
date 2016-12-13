@@ -1,0 +1,251 @@
+.banner_n{
+	width: 1349px;
+	height: 380px;
+	position: relative;
+	overflow: hidden;
+}
+.banner_n .banner_wrap{
+	font-family: Microsoft Yahei;
+	font-size: 12px;
+	position: absolute;
+	height:380px;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.banner_n .banner_wrap .pic_show{
+	position: relative;
+	width: 1349px;
+	height: 380px;
+	padding:0;
+	margin: 0;
+	list-style: none;
+}
+
+.banner_n .banner_wrap .pic_show li{
+	opacity: 0.8;
+}
+.banner_n .banner_wrap .pic_show li a{
+	display: block;
+	height: 380px;
+}
+.pic_show li .img1{
+	background: url(../../img/imall/banner/mbanner01_20160824.jpg) no-repeat center bottom;
+}
+.pic_show li .img2{
+	background: url(../../img/imall/banner/mbanner01_20160921.jpg) no-repeat center bottom;
+}
+.pic_show li .img3{
+	background: url(../../img/imall/banner/mbanner01_20161019.jpg) no-repeat center bottom;
+}
+.pic_show li .img4{
+	background: url(../../img/imall/banner/mbanner01_20161108.jpg) no-repeat center bottom;
+}
+.all_search{
+	width: 1200px;
+	height: 300px;
+	margin: 0 auto;
+}
+.all_search .all_search_wrap{
+	position: absolute;
+	margin: 40px 0 0 0;
+	width: 600px;
+	height: 300px;
+	background: #fff;
+	z-index:1000;
+}
+
+.all_search .all_search_wrap .left{
+	float: left;
+	list-style: none;
+	width: 110px;
+	height: 300px;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.all_search .all_search_wrap .left li{
+	width: 71px;
+	height: 59px;
+	text-align: center;
+	font-size: 14px;
+	font-family: Microsoft Yahei;
+	line-height: 59px;
+	padding: 0 20px;
+	background: #f3f3f3;
+	border-bottom: 1px solid #e1e1e1;
+	border-right: 1px solid #e1e1e1;
+	cursor: pointer;
+}
+.all_search .all_search_wrap .left .next{
+	border-bottom: 0px;
+}
+
+.all_search .all_search_wrap .left .last{
+	height: 120px;
+}
+.all_search .all_search_wrap .cate_channel_option{
+	float: left;
+	width: 490px;
+	height: 300px;
+	background: #fff;
+	position: relative;
+}
+#domisticdiv,#apartmentDiv{
+	margin: 0 auto;
+	width: 455px;
+	overflow: hidden;
+}
+#domisticdiv .keywords_wrap,#apartmentDiv .keywords_wrap{
+	padding: 14px 0 0 0;
+}
+.keywords_wrap dl{
+	margin: 20px 0 0 0;
+	position: relative;
+	width: 440px;
+	height: 32px;
+}
+.keywords_wrap dl dt{
+	float: left;
+	text-align: right;
+	font-size: 14px;
+	color: #555;
+	line-height: 30px;
+	padding: 0 10px 0 0;
+	width: 60px;
+	font-family: Microsoft Yahei;
+}
+
+
+.keywords_wrap dl dd.w332{
+	float: left;
+	width: 362px;
+	border: 1px solid #ccc;
+	background: #fff;
+	border-radius: 3px;
+	padding: 0 3px;
+	white-space: nowrap;
+	margin: 0;
+}
+input{
+	outline: none;
+}
+dd.w332 input{
+	float: left;
+	width: 346px;
+	height: 32px;
+	line-height: 32px;
+	border: 0;
+	padding: 0 4px;
+	font-size: 14px;
+}
+dd.com_ErrorBox{
+	float: left;
+	white-space: nowrap;
+	padding: 0 3px;
+	width: 142px;
+	height: 32px;
+	border: 1px solid #ccc;
+	margin: 0;
+	border-radius: 3px;
+}
+
+dd.com_ErrorBox input{
+	float: left;
+	width: 92px;
+	height: 32px;
+	padding: 0 4px;
+	border: 0;
+}
+.submit{
+	width: 382px;
+	height: 32px;
+	padding: 0 0 0 70px;
+	margin-top:20px; 
+}
+.submit .search_btn{
+	width: 159px;
+	background: #f55;
+	color: #fff;
+	height: 32px;
+	line-height: 32px;
+	float: left;
+	border-radius: 3px;
+	text-align: center;
+	margin: 0 10px 0 0;
+	font-family: Microsoft Yahei;
+	cursor: pointer;
+}	
+
+.dots{
+	position: absolute;
+	top: 350px;
+	left: 100px;
+	height: 30px;
+	width: 250px;
+	margin-right: -603px;
+	text-align: right;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.dots .dot{
+	width: 24px;
+	height: 4px;
+	padding: 5px 3px;
+	overflow: hidden;
+	zoom: 1;
+	line-height: 9999px;
+	display: inline-block;
+	cursor: pointer;
+	background: url(../../img/imall/banner/icon_index.png) no-repeat 0 0;
+	background-position: -508px -368px;
+}
+
+.banner_n .login_ban{
+	background: white;
+	height: 304px;
+	width: 300px;
+	margin: 40px 150px 0;
+	position: relative;
+	z-index: 10;
+	float: right;
+}
+.banner_n .login_ban .login_state{
+	width: 180px;
+	margin: 50px auto 0;
+}
+.login_ban .login_state .face_b{
+	width: 84px;
+	margin: 30px auto;
+}
+
+.login_state .face_b .icon_comt_way0{
+	display: inline-block;
+	width: 84px;
+	height: 84px;
+	background: url(../../img/imall/banner/dollars_icon.png) no-repeat 0 -102px;
+}
+.login_state .login_inn{
+	height: 40px;
+	width: 180px;
+	margin: 20px auto;
+}
+.login_state .login_inn a{
+	display: block;
+	text-align: center;
+	background: #37d;
+	font: 14px/40px "微软雅黑";
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.login_state .redis p{
+	cursor: pointer;
+	text-align: center;
+	font: 14px/40px "微软雅黑";
+}
+

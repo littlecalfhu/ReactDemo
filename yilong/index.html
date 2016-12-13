@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>艺龙旅游网</title>
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/header.css">
+	<link rel="stylesheet" type="text/css" href="./css/banner_n.css">
+	<link rel="stylesheet" type="text/css" href="./css/no_record.css">
+	<link rel="stylesheet" type="text/css" href="./css/flod.css">
+	<link rel="stylesheet" type="text/css" href="./css/termini.css">
+	<link rel="stylesheet" type="text/css" href="./css/discount.css">
+	<link rel="stylesheet" type="text/css" href="./css/raiders.css">
+	<link rel="stylesheet" type="text/css" href="./css/service_us.css">
+	<link rel="stylesheet" type="text/css" href="./css/footer.css">
+	<link rel="stylesheet" type="text/css" href="./css/bottom_nav.css">
+</head>
+<body>
+	<div id="header">
+		<div class="header-top">
+			<div class="logo">
+				<a href="index.html" title="艺龙旅游网">艺龙旅游网</a>
+			</div>
+			<div class="right">
+				<div class="branch_menu">
+					<ul>
+						<li><a href="imall.html">积分商城</a></li>
+						<li>|</li>
+						<li><a href="">礼品卡</a></li>
+						<li>|</li>
+						<li><a href="">在线客服</a></li>
+						<li>|</li>
+						<li><a href="">帮助中心</a></li>
+						<li>|</li>
+						<li ><a href="">English</a>
+							<i></i>
+						</li>
+					</ul>
+				</div>
+				<a class="one_panic" href="" >
+					<i class="phone"></i>
+					<em>手机版</em>
+					<em>专享5折起</em>
+				</a>
+				<span class="online_phone" onmouseover="phonenumshow()" onmouseout="phonenumhidden()">
+					<i class="phone2"></i>
+					<em>7×24 客服电话</em>
+					<b>
+						4009-333-333
+						<i></i>
+					</b>
+					<div class="on_phonnum" style="display: none;">
+						<i class="com_arrow_t1"></i>
+						<ul>
+							<li><p>国内：4009-333-333</p></li>
+							<li><p>香港：852-8131-8883</p>
+							</li>
+							<li><p>台湾：886-2-7717-8123</p></li>
+							<li><p>海外：80-10-6432-9999</p></li>
+						</ul>
+					</div>
+				</span>
+			</div>
+		</div>
+		<div class="nav_box">
+			<div class="nav">
+				<ul class="navul">
+				<li><a href="">首页</a></li>
+				<li style="background-color: #003679;"><a href="">国内酒店</a></li>
+				<li><a href="">国际酒店<span class="icon_coupon"></span></a></li>
+				<li><a href="">短租公寓<span class="icon_apart"></span></a></li>
+				<li><a href="">机票</a></li>
+				<li><a href="">火车票</a></li>
+				<li><a href="">汽车票<span class="icon_reserve"></span></a></li>
+				<li><a href="">用车<span class="icon_new"></span></a></li>
+				<li><a href="">旅游指南</a></li>
+			</ul>
+			<div class="accout" onmouseover="loginlsitshow()" onmouseout="loginlisthidden()">
+				<div class="log">
+				<span>
+					<a href="">登录</a>
+				</span>
+				<span>
+					<a href="">注册</a>
+				</span>
+				</div>
+				<div class="drop_box_log" style="display: none;">
+					<div class="new_btnlogin">
+						<a href="">登录</a>
+					</div>
+					<ul class="clx">
+						<li class="icon_d1"><a href="">酒店订单</a></li>
+						<li class="icon_d2" style="display: none;"><a href="">团购订单</a></li>
+						<li class="icon_d3"><a href="">机票订单</a></li>
+						<li class="icon_d4"><a href="">火车票订单</a></li>
+						<li class="icon_d5"><a href="">现金账户</a></li>
+						<li class="icon_d6"><a href="">汽车票订单</a></li>
+						<li class="icon_d7"><a href="">酒店收藏</a></li>
+						<li class="icon_d8"><a href="">我的点评</a></li>
+						<li class="icon_d9"><a href="">个人设置</a></li>
+					</ul>
+				</div>
+			</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="./js/header.js"></script>
+	</div>
+	<div class="banner_n">
+		<div class="banner_wrap">
+			<ul class="pic_show">
+				<li>
+					<a href=""><img src="./img/banner_nimg/ad2_20151228.jpg"></a>
+				</li>
+				<li>
+					<a href="newhotel.html"><img src="./img/banner_nimg/20160218_banner2.jpg"></a>
+				</li>
+			</ul>
+			<ol class="dots">
+				<li></li>
+				<li></li>
+			</ol>
+		</div>
+		<div class="all_search">
+			<div class="wrap1000">
+				<div class="all_search_wrap">
+					<div class="cate_channel">
+						<ul class="left">
+							<li style="border-right:0; color:blue; background:#FFFFFF;">国内酒店</li>
+							<li>短租公寓</li>
+							<li class="next">港澳台酒店</li>
+							<li class="last"></li>
+						</ul>
+						<div class="cate_channel_option">
+							<div id="domisticdiv" >
+								<div class="keywords_wrap">
+									<dl>
+									<dt>目的地</dt>
+									<dd class="w332">
+										<input type="text" name="">
+									</dd>
+									</dl>
+								<dl>
+									<dt>入住</dt>
+									<dd class="com_ErrorBox"><input type="text" name=""></dd>
+									<dt>离店</dt>
+									<dd class="com_ErrorBox"><input type="text" name=""></dd>
+								</dl>
+								<dl>
+									<dt>关键字</dt>
+									<dd class="w332">
+										<input type="text" name="">
+									</dd>
+								</dl>
+								<div class="submit">
+									<span class="search_btn">
+										<i class="com_iconsearch"></i>
+											搜索
+									</span>
+									<span class="search_map_btn">
+										<i class="com_iconmapsearch"></i>
+											地图搜索
+									</span>
+								</div>
+								<div class="search_hot">
+									<dl>
+										<dt>大家热搜:</dt>
+										<dd>太原</dd>
+										<dd>黄山</dd>
+										<dd>昆明</dd>
+										<dd>峨眉山</dd>
+									</dl>
+								</div>
+								</div>	
+							</div>
+							<div id="apartmentDiv" style="display: none">
+								<div class="keywords_wrap" >
+									<dl>
+									<dt>目的地</dt>
+									<dd class="w332">
+										<input type="text" name="">
+									</dd>
+									</dl>
+								<dl>
+									<dt>入住</dt>
+									<dd class="com_ErrorBox"><input type="text" name=""></dd>
+									<dt>离店</dt>
+									<dd class="com_ErrorBox"><input type="text" name=""></dd>
+								</dl>
+								<div class="submit">
+									<span class="search_btn">
+										<i class="com_iconsearch"></i>
+											搜索
+									</span>
+								</div>
+								<div class="search_hot">
+									<dl>
+										<dt>大家热搜:</dt>
+										<dd>三亚</dd>
+										<dd>广州</dd>
+										<dd>武汉</dd>
+									</dl>
+								</div>
+								</div>	
+							</div>
+							<div id="hkDiv" style="display: none">
+								<div class="keywords_wrap">
+									<dl>
+									<dt>目的地</dt>
+									<dd class="w332">
+										<input type="text" name="">
+									</dd>
+									</dl>
+								<dl>
+									<dt>入住</dt>
+									<dd class="com_ErrorBox"><input type="text" name=""></dd>
+									<dt>离店</dt>
+									<dd class="com_ErrorBox"><input type="text" name=""></dd>
+								</dl>
+								<dl>
+									<dt>关键字</dt>
+									<dd class="w332">
+										<input type="text" name="">
+									</dd>
+								</dl>
+								<div class="submit">
+									<span class="search_btn">
+										<i class="com_iconsearch"></i>
+											搜索
+									</span>
+									<span class="search_map_btn">
+										<i class="com_iconmapsearch"></i>
+											地图搜索
+									</span>
+								</div>
+								<div class="search_hot">
+									<dl>
+										<dt>大家热搜:</dt>
+										<dd>台北</dd>
+										<dd>澳门</dd>
+										<dd>台北</dd>
+										<dd>垦丁</dd>
+									</dl>
+								</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="./js/banner_n.js"></script>
+	</div>
+	<div class="no_record" style="display: none;">no_record</div>
+	<div class="flod">
+		<ul class="clearfix">
+			<li>
+				<a href="fold.html">
+					<div class="mask_b">
+						<h4>园林酒店</h4>
+					</div>
+					<div class="pic_auto pic_auto1">
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="flod2.html">
+					<div class="mask_b">
+						<h4>设计师酒店</h4>
+					</div>
+					<div class="pic_auto pic_auto2">
+					</div>
+				</a>
+			</li>
+			<li>
+				<a>
+					<div class="mask_b">
+						<h4>青年旅社</h4>
+					</div>
+					<div class="pic_auto pic_auto3">
+					</div>
+				</a>
+			</li>
+			<li>
+				<a>
+					<div class="mask_b">
+						<h4>特色客栈</h4>
+					</div>
+					<div class="pic_auto pic_auto4">
+					</div>
+				</a>
+			</li>
+			<li>
+				<a>
+					<div class="mask_b">
+						<h4>海岛酒店</h4>
+					</div>
+					<div class="pic_auto pic_auto5">
+					</div>
+				</a>
+			</li>
+			<li>
+				<a>
+					<div class="mask_b">
+						<h4>海外温泉</h4>
+					</div>
+					<div class="pic_auto pic_auto6">
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="termini">
+		<div class="title">
+			<span class="rightmore">
+				<a>下一站>></a>
+			</span>
+			<h2 class="clearfix">
+				<a>目的地推荐</a>
+			</h2>
+		</div>
+		<div class="termini_com">
+			<ul class="termini_list">
+				<li>
+					<div class="termini_img termini_img1">
+						<span></span>
+					</div>
+					<dl class="termini_name">
+						<dt>赏花</dt>
+						<dd><a href="beijing.html">北京</a></dd>
+						<dd><a>武汉</a></dd>
+						<dd><a>太原</a></dd>
+						<dd><a>汉中</a></dd>
+						<dd><a>罗平</a></dd>
+						<dd><a>洛阳</a></dd>
+						<dd><a>苏州</a></dd>
+						<dd><a>杭州</a></dd>
+						<dd><a>林芝</a></dd>
+					</dl>
+				</li>
+				<li>
+					<div class="termini_img termini_img2">
+						<span></span>
+					</div>
+					<dl class="termini_name">
+						<dt>天然氧吧</dt>
+						<dd><a>拉萨</a></dd>
+						<dd><a>大理</a></dd>
+						<dd><a>丹山</a></dd>
+						<dd><a>厦门</a></dd>
+						<dd><a>昆明</a></dd>
+						<dd><a>绵阳</a></dd>
+						<dd><a>黄山</a></dd>
+						<dd><a>三亚</a></dd>
+					</dl>
+				</li>
+				<li><div class="termini_img termini_img3">
+						<span></span>
+					</div>
+					<dl class="termini_name">
+						<dt>古镇</dt>
+						<dd><a>乌镇</a></dd>
+						<dd><a>同里</a></dd>
+						<dd><a>周庄</a></dd>
+						<dd><a>西递宏村</a></dd>
+						<dd><a>丽江</a></dd>
+						<dd><a>黄桃</a></dd>
+						<dd><a>南浔</a></dd>
+						<dd><a>平遥</a></dd>
+						<dd><a>凤凰</a></dd>
+					</dl>
+				</li>
+				<li><div class="termini_img termini_img4">
+						<span></span>
+					</div>
+					<dl class="termini_name">
+						<dt>世界遗产</dt>
+						<dd><a>九寨沟</a></dd>
+						<dd><a>泰山</a></dd>
+						<dd><a>青城山</a></dd>
+						<dd><a>武当山</a></dd>
+						<dd><a>莫高窟</a></dd>
+						<dd><a>西安</a></dd>
+						<dd><a>安阳殷墟</a></dd>
+						<dd><a>元阳梯田</a></dd>
+					</dl></li>
+				<li><div class="termini_img termini_img5">
+						<span></span>
+					</div>
+					<dl class="termini_name">
+						<dt>登山</dt>
+						<dd><a>泰山</a></dd>
+						<dd><a>黄山</a></dd>
+						<dd><a>长白山</a></dd>
+						<dd><a>武当山</a></dd>
+						<dd><a>普陀山</a></dd>
+						<dd><a>五台山</a></dd>
+						<dd><a>恒山</a></dd>
+						<dd><a>杭州</a></dd>
+					</dl></li>
+				<li><div class="termini_img termini_img6">
+						<span></span>
+					</div>
+					<dl class="termini_name">
+						<dt>温泉</dt>
+						<dd><a>内蒙阿尔山</a></dd>
+						<dd><a>东北长白山</a></dd>
+						<dd><a>云南腾冲热海</a></dd>
+						<dd><a>西藏羊八井</a></dd>
+					</dl></li>
+			</ul>
+		</div>
+	</div>
+	<div class="discount">
+		<div class="title">
+			<span class="rightmore"></span>
+			<h2>促销特卖会</h2>
+		</div>
+		<div class="mt20">
+			<ul class="tab_theme">
+				<li>
+					<div class="pic_add">
+						<img  src="img/discout/SaleRemit_pic01_20160601.jpg"/>
+					</div>
+					<div class="city_name">
+						设计师酒店<span>当顶级设计师遇上顶级酒店</span>
+					</div>
+					<div class="scale_tour">
+						<p>活动日期:2016.6.1-2016.12.31</p>
+					</div>
+				</li>
+				<li>
+					<div class="pic_add">
+						<img  src="img/discout/SaleRemit_pic01_20160602.jpg"/>
+					</div>
+					<div class="city_name">
+						新酒店，初体验<span>全国优质新酒店2-8折来袭</span>
+					</div>
+					<div class="scale_tour">
+						<p>活动日期:2016.6.1-2016.12.31</p>
+					</div>
+				</li>
+				<li>
+					<div class="pic_add">
+						<img  src="img/discout/SaleRemit_pic01_20160603.jpg"/>
+					</div>
+					<div class="city_name">
+						海岛酒店<span>到碧蓝天下用力呼吸</span>
+					</div>
+					<div class="scale_tour">
+						<p>活动日期:2016.6.1-2016.12.31</p>
+					</div>
+				</li>
+				<li>
+					<div class="pic_add">
+						<img  src="img/discout/SaleRemit_pic01_20160604.jpg"/>
+					</div>
+					<div class="city_name">
+						探秘新酒店开业<span>知名品牌开业优惠</span>
+					</div>
+					<div class="scale_tour">
+						<p>活动日期:2016.6.1-2016.12.31</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="raiders">
+		<div class="title">
+			<span class="rightmore">
+				<a>更多>></a>
+			</span>
+			<h2 class="clearfix">
+				<a>推荐品牌</a>
+			</h2>
+		</div>
+		<div class="mt20">
+			<ul class="recom_brand_list">
+				<li>
+					<a class="linkt">
+						<i class="zhouji"></i>
+						<p>洲际酒店集团</p>
+					</a>
+					<a class="linkb">
+						<i class="xidawu"></i>
+						<p>喜达屋酒店集团</p>
+					</a>
+				</li>
+				<li>
+					<a class="linkt">
+						<i class="wanhao"></i>
+						<p>万豪酒店集团</p>
+					</a>
+					<a class="linkb">
+						<i class="kaiyue"></i>
+						<p>凯悦酒店集团</p>
+					</a>
+				</li>
+				<li>
+					<a class="linkt">
+						<i class="rujia"></i>
+						<p>如家</p>
+					</a>
+					<a class="linkb">
+						<i class="hanting"></i>
+						<p>汉庭</p>
+					</a>
+				</li>
+				<li>
+					<a class="linkt">
+						<i class="qitian"></i>
+						<p>7天</p>
+					</a>
+					<a class="linkb">
+						<i class="jinjiang"></i>
+						<p>锦江之星</p>
+					</a>
+				</li>
+				<li>
+					<a class="linkt">
+						<i class="dazhonghua"></i>
+						<p>大中华</p>
+					</a>
+					<a class="linkb">
+						<i class="xianggelila"></i>
+						<p>香格里拉</p>
+					</a>
+				</li>
+				<li>
+					<a class="linkt">
+						<i class="xierdun"></i>
+						<p>希尔顿</p>
+					</a>
+					<a class="linkb">
+						<i class="yashige"></i>
+						<p>雅诗阁</p>
+					</a>
+				</li>
+				<li>
+					<a class="linkt">
+						<i class="jinling"></i>
+						<p>金陵连锁</p>
+					</a>
+					<a class="linkb">
+						<i class="biguiyuan"></i>
+						<p>碧桂园</p>
+					</a>
+				</li>
+				<li>
+					<a class="linkt">
+						<i class="motai"></i>
+						<p>莫泰</p>
+					</a>
+					<a class="linkb">
+						<i class="gelinhaotai"></i>
+						<p>格林豪泰</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="service_us">
+		<div class="service_wrap">
+			<div class="service_inf">
+				<ul>
+					<li>
+						<i class="why_icon1"></i>
+						<span>全球50万家酒店</span>
+					</li>
+					<li>
+						<i class="why_icon2"></i>
+						<span>订酒店返现高达20%</span>
+					</li>
+					<li>
+						<i class="why_icon3"></i>
+						<span>国际酒店8折起</span>
+					</li>
+					<li>
+						<i class="why_icon4"></i>
+						<span>7×24小时服务</span>
+					</li>
+				</ul>
+			</div>
+			<div class="booking_email">
+				<div class="service_agreement">
+					<a>艺龙服务协议</a>
+				</div>
+				<div class="mail_icon"></div>
+				<div class="input_email">
+					<span>亲，留下你的邮箱，会有惊喜呦</span>
+					<em>
+						<input type="text" value="请输入你的E-mail" 								id="email"/>
+					</em>
+					<b>
+						<input type="button" value="立即订阅"/>
+					</b>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer_info">
+			<dl>
+				<dt>加盟合作</dt>
+				<dd><a>酒店加盟</a></dd>
+				<dd><a>分销联盟</a></dd>
+				<dd><a>代理合作</a></dd>
+				<dd><a>广告服务</a></dd>
+				<dd><a>商家中心</a></dd>
+			</dl>
+			<dl>
+				<dt>关于艺龙</dt>
+				<dd><a>关于艺龙</a></dd>
+				<dd><a>酒店大全</a></dd>
+				<dd><a>国际酒店</a></dd>
+				<dd><a>校园招聘</a></dd>
+				<dd><a>联系我们</a></dd>
+			</dl>
+			<dl>
+				<dt>艺龙APP下载</dt>
+				<dd class="pt10">
+					<i class="cm_icon app"></i>
+				</dd>
+			</dl>
+			<dl>
+				<dt>艺龙官方微信</dt>
+				<dd class="pt10">
+					<i class="cm_icon wx"></i>
+				</dd>
+			</dl>
+		</div>
+		<div class="footer_copy">
+			© 1999 - 2016 eLong, Inc or its affiliates. All Rights Reserved.<a>京ICP证010011号</a> 京公网安备<a>11010502026059</a>号
+		</div>
+		<div class="footer_safe">
+			<a href="" class="qua_1"></a>
+			<a href="" class="qua_2"></a>
+			<a href="" class="qua_3"></a>
+			<a href="" class="qua_4"></a>
+		</div>
+	</div>
+	<div class="bottom_nav"></div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+.content{
+	width: 1349px;
+}
+.content .infor_list{
+	width: 990px;
+	height: 64px;
+	margin: 20px auto;
+	padding-left: 10px;
+}
+
+.content .infor_list dl{
+	width: 330px;
+	height: 64px;
+	float: left;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+}
+.infor_list dl dt{
+	width: 64px;
+	height: 64px;
+	float: left;
+}
+dl dt.dc_icon1,.dc_icon2,.dc_icon3{
+	background: url(../../img/imall/banner/dollars_icon.png) no-repeat 0 0;
+}
+.dc_icon2{
+	background-position: -68px 0;
+}
+.dc_icon3{
+	background-position: -137px 0;
+}
+.infor_list dl dd{
+	width: 246px;
+	float: left;
+	margin: 0;
+	padding: 10px 0 0 20px;
+}
+.infor_list dl dd h6{
+	margin: 0;
+	font:20px/30px "微软雅黑";
+	color: #555;
+}
+.infor_list dl dd p{
+	margin: 0;
+	font: 16px/24px "微软雅黑";
+	color: #999;
+}
+.content .coupon{
+	background: #f2f2f2;
+	padding-bottom: 20px;
+	margin-top: 20px;
+	width: 1349px;
+	height: 1817px;
+}
+.content .coupon .coupon_wrap{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.coupon .coupon_wrap .title{
+	padding-top: 20px;
+	height: 42px;
+}
+.coupon h2{
+	width: 1000px;
+	border-bottom: 2px solid red;
+	padding: 5px 0;
+}
+.coupon h2 a{
+	font:24px/30px "微软雅黑";
+	color: #555;
+}
+.coupon h2 a i.hot_icons{
+	background:url(../../img/imall/banner/dollars_icon.png) no-repeat 0 -68px;
+	height: 28px;
+	width: 26px;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.coupon .coupon_list{
+	width: 1020px;
+	margin: 20px 0 0;
+	padding: 0;
+}
+.coupon .coupon_list ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.coupon_list li{
+	width: 237px;
+	float: left;
+	margin: 20px 17px 0 0;
+	position: relative;
+	padding: 0;
+	display: list-item;
+	background: white;
+	cursor: pointer;
+}
+.coupon_inf{
+	padding: 10px 15px;
+}
+.coupon_list li .coupon_inf a{
+	display: inline-block;
+	text-decoration: none;
+	color: #555;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	white-space: nowrap;
+	width: 205px;
+	overflow: hidden;
+	margin-bottom: 10px;
+	text-overflow: ellipsis;
+}
+
+.coupon_list li .coupon_inf span{
+	font:14px/24px "微软雅黑";
+	color: #555;
+}
+.coupon_list li .coupon_inf span b{
+	color: #f55;
+	font-size: 24px;
+	margin-right: 3px;
+	font-weight: normal;
+}
+.paging1{
+	text-align: center;
+	margin: 40px auto 0;
+	font-family: "微软雅黑";
+}
+.paging1 a{
+	text-decoration: none;
+	font-family: simsun;
+	border: 1px solid #DDD;
+	color: #555;
+	padding: 3px 5px;
+	cursor: pointer;
+}
+.paging1 a:hover{
+	color:#37d;
+	border:1px solid #49f;
+}

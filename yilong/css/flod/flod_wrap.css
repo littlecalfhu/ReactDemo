@@ -1,0 +1,109 @@
+.flod_wrap{
+	background: url(../../img/flod/banner.jpg) no-repeat center 0 #f6f1e5;
+	padding: 480px 0 0 0;
+	overflow: hidden;
+}
+.flod_wrap .wrap_test{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+}
+img:hover{
+	opacity: 0.8;
+}
+.one{
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+.one .title h2{
+	font: 36px/40px "微软雅黑";
+	color: #555;
+	margin: 0;
+	padding: 0;
+}
+.one .title span{
+	font: 18px/40px "微软雅黑";
+	color: #555;
+	padding: 0 10px;
+}
+.city_inf{
+	background: url(../../img/flod/rgbg.png) no-repeat 0 0;
+	width: 280px;
+	padding: 80px 20px 30px 32px;
+	height: 110px;
+	float: right;
+}
+.city_inf p{
+	font: 14px/21px "微软雅黑";
+	height: 104px;
+	overflow: hidden;
+}
+.bigpic{
+	float: left;
+	width: 660px;
+	height: 220px;
+	position: relative;
+	cursor: pointer;
+}
+.city_list{
+	width: 1000px;
+	padding: 20px 0 0 0;
+	overflow: hidden;
+}
+.city_list ul{
+	width: 1020px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.city_list ul li{
+	width: 320px;
+	float: left;
+	background: #fff;
+	margin: 0 20px 20px 0;
+	cursor: pointer;
+}
+.city_list h6{
+	font-family: "微软雅黑";
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	overflow: hidden;
+	margin: 0;
+}
+.city_list h6 span{
+	float: right;
+	color: #555;
+}
+.city_list h6 span em,b{
+	color:red;
+	font-size: 18px;
+}
+
+.city_list ul li h6 a {
+    font: 18px/40px Microsoft Yahei;
+    color: #ff555;
+    text-decoration: none;
+    width: 210px;
+    float: left;
+    overflow: hidden;
+    height: 40px;
+}
+.city_list_inf{
+	border-top: 1px dashed #ccc;
+	margin: 0 10px;
+	padding: 5px 0;
+	background: url(../../img/flod/dd1.jpg) no-repeat 0 4px;
+}
+.city_list ul li .city_list_inf p {
+    padding: 10px;
+    background: url(../../img/flod/dd2.jpg) no-repeat right bottom;
+    height: 33px;
+    overflow: hidden;
+    font: 12px/20px "微软雅黑";
+    font-weight: normal;
+    margin: 0;
+}

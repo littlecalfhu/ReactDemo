@@ -1,0 +1,765 @@
+body {
+    font-size: 12px;
+    font-family: arial,Verdana, Geneva, Helvetica;
+    color: #555;
+    line-height: 20px;
+}
+a {
+    color: #37D;
+    cursor: pointer;
+    text-decoration: none;
+}
+.reponse_wrap3{
+	width: 1200px;
+	margin : 0 auto;
+	height: 3756px;
+}
+.mt10{
+	margin-top: 10px;
+}
+.mb10{
+	margin-bottom: 10px;
+}
+.beijingh2{
+	font: 24px/24px "微软雅黑";
+	margin: 0 20px 0 0;
+	float: left;
+}
+
+.link555{
+	padding-top: 5px;
+	font:12px/20px "微软雅黑";
+}
+.link555 a{
+	color: #555;
+	cursor: pointer;
+	text-decoration: none;
+}
+.link555 a:hover{
+	color: blue;
+}
+
+.search_box{
+	height: 34px;
+	background: #eff4fa;
+	border-top:2px solid #b5cbe6;
+	padding: 9px;
+}
+
+.search_item label{
+	height: 32px;
+	display: block;
+	padding: 0 2%;
+	overflow: hidden;
+	cursor: default;
+	float: left;
+}
+.search_termini{
+	width: 248px;
+}
+.search_item{
+	border: 1px solid #8db9ef;
+	background-color: #fff;
+	margin-right: 8px;
+	color: #999;
+	font-size: 14px;
+	line-height: 32px;
+	float: left;
+}
+.search_item label span{
+	float: left;
+	color: #999;
+	font-size: 14px;
+	line-height: 32px;
+}
+.search_item label input{
+	display: block;
+	border: 0;
+	font: 16px/30px "微软雅黑";
+	margin-left: 50px;
+	color: #555;
+}
+.search_data{
+	width: 496px;
+}
+.search_keywords{
+	width: 258px;
+}
+.btn_search_bt1{
+	width: 140px;
+	height: 34px;
+	font: 18px/34px "微软雅黑";
+	background-color: #f55;
+	border-radius: 3px;
+	float: right;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+}
+.btn_search_bt1:hover{
+	background-color: #D33;
+}
+.btn_search_bt1 span,.icon_filter_posi,.filter_posi_type li i,.icon_radio1,.icon_filter_pri,.icon_checkbox1,.icon_filter_star,.icon_filter_prod,.icon_filter_theme,.icon_filter_serv,.icon_filter_per,.icon_close_h1,.icon_sort_arrb1,.icon_sort_arrb2,.icon_add_coll,.icon_crown_new,.icon_elevel3{
+	display: inline-block;
+	background: url(../../img/beijing/icon2015-1.png) -71px -78px no-repeat;
+	margin-left: 10px;
+	width: 18px;
+	height: 17px;
+}
+.filter_box{
+	margin-top: 5px;
+	margin-bottom: 20px;
+	border: 1px solid #eee;
+	position: relative;
+	z-index: 2;
+}
+.filter_btn{
+	position: absolute;
+	width: 170px;
+	height: 20px;
+	padding-top: 30px;
+	left: 50%;
+	border: 1px solid #d4e3f2;
+	margin-left: -86px;
+	bottom: -20px;
+	border-radius: 30px;
+	background-color: #ebf5ff;
+	text-align: center;
+	cursor: pointer;
+	color: #37d;
+	z-index: 0;
+	letter-spacing: 1px;
+	font: 12px/20px "微软雅黑";
+}
+.filter_btn:hover{
+	background-color: #37d;
+	color: white;
+}
+.filter_item{
+	background-color: #eff4fa;
+    position: relative;
+    line-height: 20px;
+    z-index: 10;
+    font-size: 12px;
+    line-height: 20px;
+    overflow: hidden;
+    color: #555;
+}
+.filter_title {
+    width: 86px;
+    float: left;
+    padding: 8px 0 8px 10px;
+    font-size: 14px;
+}
+.filter_title span {
+    margin-right: 5px;
+}
+.icon_filter_posi {
+    width: 18px;
+    height: 18px;
+    background-position: -98px -3px;
+}
+.filter_title .b-line {
+    display: block;
+    width: 97px;
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    border-bottom: 1px solid #FFF;
+}
+.filter_option_box {
+    margin-left: 96px;
+    padding: 0 20px;
+    background-color: #FFF;
+}
+.filter_unlimitd {
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    color: #555;
+    border: 1px solid #fff;
+    background-color: #e3f0ff;
+}
+.filter_option {
+    border-bottom: 1px dashed #EEE;
+    padding: 8px 0 3px;
+    position: relative;
+    overflow: hidden;
+}
+.filter_posi_type {
+    margin: 0 40px 0 60px;
+    height: 25px;
+    overflow: hidden;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.filter_posi_type li:hover {
+    border-top: 2px solid #39F;
+    padding-top: 5px;
+    margin-top: -8px;
+    padding-bottom: 5px;
+}
+.filter_posi_type li {
+    float: left;
+    padding: 0 1.2%;
+    margin-right: 2%;
+    cursor: pointer;
+}
+.filter_posi_type li i {
+    margin-left: 4px;
+    width: 8px;
+    height: 4px;
+    background-position: -462px -50px;
+}
+.filter_posi_list {
+    padding: 5px 10px 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #f7f7f7;
+}
+.filter_posi_list li, .filter_cb_list li {
+    width: 11.4%;
+    margin-right: 1%;
+    height: 20px;
+    float: left;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.filter_posi_list li:hover{
+	color: #37d;
+}
+.filter_cb_list li:hover{
+	color: #37d;
+}
+.filter_posi_list li i, .filter_cb_list li i {
+    margin-right: 6px;
+    float: left;
+    margin-top: 2px;
+}
+.icon_radio1 {
+    width: 16px;
+    height: 16px;
+    background-position: -475px -79px;
+}
+.filter_posi_list li span, .filter_cb_list li span {
+    display: block;
+    padding-left: 1px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0;
+}
+.filter_posi_list li input, .filter_cb_list li input {
+    display: none;
+    border: 0;
+    outline: 0;
+}
+.filter_more,.icon_yh,.icon_nmb{
+	background: url(../../img/beijing/hotel-com.png) no-repeat 0 0;
+	display: inline-block;
+}
+.filter_posi_list .filter_more {
+    margin: 0;
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-position: -154px -15px;
+}
+.filter_posi_list .filter_more:hover{
+	background-position: -180px -15px;
+}
+.icon_filter_pri{
+	background-position: -119px -4px;
+}
+.filter_custom {
+    width: 240px;
+    text-align: right;
+    position: absolute;
+    right: 175px;
+    top: 7px;
+}
+.filter_custom  span input{
+	border: 1px solid #DDD;
+    width: 44px;
+    padding: 0 2px;
+    outline: 0;
+}
+.filter_custom  span.queren{
+	border: 1px solid #DDD;
+	text-align: center;
+	width: 20px;
+	padding: 2px 10px;
+	cursor: pointer;
+	
+}
+.icon_filter_star{
+	background-position: -141px -4px;
+}
+.filter_custom  span.queren:hover{
+	background-color: #37d;
+	color: white;
+	
+}
+.icon_checkbox1{
+	background-position:-347px -78px;
+	 margin-right: 6px;
+    float: left;
+    margin-top: 2px;
+    width: 16px;
+    height: 16px;
+}
+.filter_cb_list li:hover .icon_checkbox1{
+	background-position: -368px -78px;
+}
+.icon_filter_prod{
+	background-position: -164px -3px;
+}
+.icon_filter_theme{
+	background-position: -186px -3px;
+}
+.icon_filter_serv{
+	background-position: -206px -1px;
+}
+.icon_filter_per{
+	background-position: -227px -3px;
+}
+.conditon{
+	overflow: hidden;
+	margin-bottom: 10px;
+	color: #555;
+}
+.cont_total {
+    font-size: 14px;
+    margin-right: 10px;
+    height: 27px;
+    float: left; 
+}
+.cont_total span {
+    vertical-align: middle;
+    color: #F55;
+    line-height: 27px;
+    margin-right: 5px;
+    font-size: 24px;
+    font-family: "微软雅黑";
+}
+.cond_list {
+    overflow: hidden;
+    height: 27px;
+    line-height: 27px;
+}
+.cond_list span {
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    border: 1px solid #CDE;
+    color: #37D;
+    padding-left: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-right: 2px;
+    font: 12px/20px "微软雅黑";
+}
+.cond_list span .icon_close_h1 {
+    width: 11px;
+    height: 11px;
+    background-position: -399px -4px;
+    -webkit-transition: 0.3s;
+    margin: 0;
+}
+.cond_list span .icon_close_h1:hover{
+	-webkit-transform: rotate(90deg);
+}
+.cond-list a {
+    margin-left: 10px;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+a {
+    color: #37D;
+    cursor: pointer;
+    text-decoration: none;
+    font: 12px/20px "微软雅黑";
+}
+.hlist_box {
+    margin-bottom: 40px;
+ 	padding: 0;
+}
+.hlist_main {
+    width: 830px;
+    overflow: hidden;
+    float: left;
+}
+.h_sort {
+    height: 38px;
+    background-color: #eff4fa;
+    line-height: 38px;
+    border: 1px solid #cde;
+    border-top: 2px solid #b5cbe6;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.sort_list{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	float: left;
+}
+.sort_list li{
+	width: 70px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 1px;
+    position: relative;
+    height: 38px;
+}
+.sort_list li:hover {
+    background-color: #49F;
+    color: #FFF;
+    top: -2px;
+    border-top: 2px solid #49f;
+}
+.sort_list li i {
+    margin-left: 3px;
+}
+.icon_sort_arrb1 {
+    background-position: -224px -123px;
+}
+
+.icon_sort_arrb1, .icon_sort_arrb2 {
+    width: 7px;
+    height: 9px;
+}
+.icon_sort_arrb2 {
+    background-position: -257px -123px;
+}
+.sort_filter {
+    width: 370px;
+    border-left: 1px dashed #CED;
+    float: right;
+}
+.sort_back_tit {
+    margin: 9px 10px 0 10px;
+    float: right;
+}
+.sort_back_tit li {
+    width: 46px;
+    height: 18px;
+    cursor: pointer;
+    border: 1px solid #CDE;
+    background-color: #FFF;
+    line-height: 18px;
+    text-align: center;
+    float: left;
+}
+.sort_back_l {
+    border-radius: 10px 0 0 10px;
+    padding-left: 2px;
+}
+
+.sort_back_r {
+    border-radius: 0 10px 10px 0;
+    padding-right: 2px;
+}
+.sort_back_tit li:hover{
+	border-color: #3377DD;
+}
+.h_list{
+	height: 3220px;
+}
+.h_item {
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    height: 130px;
+}
+.h_info_pic {
+    width: 180px;
+    height: 130px;
+    float: left;
+    position: relative;
+}
+.h_info_pic img{
+	width: 180px;
+	height: 130px;
+}
+.h_info_pic .float_pic {
+	display: none;
+	position: absolute;
+    top: -20px;
+    left: 190px;
+    z-index: 5;
+    width: 350px;
+    height: 365px;
+    border: 5px solid #DDD;
+}
+.h_info_pic .float_pic img{
+	width: 350px;
+	height: 362px;
+	float: left;
+}
+.h_info_text {
+    margin-left: 195px;
+    height: 130px;
+}
+.h_info_pri {
+    width: 155px;
+    height: 130px;
+    float: right;
+    text-align: center;
+    position: relative;
+}
+p{
+	padding: 0;
+	margin: 0;
+}
+.h_info_pri .c666 {
+    vertical-align: 11px;
+    font-size: 14px;
+    color: #666;
+}
+.h_pri_num {
+    font: 30px Arial;
+    color: #F55;
+}
+.h_info_pri .cf55 {
+    vertical-align: 2px;
+    color: #f55;
+}
+.mt5{
+	margin-top: 5px;
+}
+.icon_yh {
+    background-position: -194px 0;
+    height: 14px;
+    width: 26px;
+    margin-top: -3px;
+}
+.h_list .h_item .to_detail a {
+    display: block;
+    border: 1px solid #e3f0ff;
+    background-color: #FFF;
+    width: 120px;
+    height: 28px;
+    border-radius: 2px;
+    margin: 10px auto 0;
+    line-height: 28px;
+    font-family: "Microsoft Yahei";
+}
+.h_list .h_item .to_detail a:hover{
+	background-color:#37d;
+	color: white;
+}
+.h_info_pri .h_add_cc {
+	display: none;
+    position: absolute;
+    bottom: 0;
+    right: 18px;
+    padding: 0 8px;
+    background-color: #e3f0ff;
+    border-radius: 10px;
+    float: left;
+    margin-right: 2px;
+}
+.add_collect {
+    cursor: pointer;
+    position: relative;
+    margin-left: 10px;
+}
+.h_add_cc span i {
+    margin-right: 2px;
+    vertical-align: middle;
+}
+.icon_add_coll {
+    width: 23px;
+    height: 20px;
+    background-position: -678px -305px;
+}
+.add_collect b {
+    color: #f55;
+    font-weight: normal;
+}
+.h_info_comt {
+    width: 130px;
+    float: right;
+    text-align: center;
+    border-left: 1px solid #EEE;
+    border-right: 1px solid #EEE;
+    height: 100px;
+}
+.h_comt_data {
+    height: 45px;
+    display: block;
+    margin: 0 10px;
+    padding: 0 2px;
+}
+.h_info_comt_bg {
+    width: 100px;
+    height: 29px;
+    display: block;
+    background: url(../../img/beijing/fixed_right.png) no-repeat -257px -48px;
+}
+.t18{
+	font-size: 18px;
+	color: #37D;
+    cursor: pointer;
+}
+.h_info_comt_bg i {
+    vertical-align: top;
+}
+.c555{
+	color: #555;
+	display: block;
+	margin-top: 5px;
+}
+.h_comt_data span b {
+    color: #37d;
+    font-weight: normal;
+}
+.lastt_book {
+    color: #21a651;
+    margin-top: 25px;
+}
+.h_info_base {
+    margin-right: 290px;
+}
+.h_info_b1 a {
+    display: inline-block;
+    max-width: 240px;
+    font: 16px Microsoft Yahei;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.icon_nmb {
+    margin-right: 5px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 23px;
+    cursor: pointer;
+}
+.icon_nmb {
+    background-position: -55px -41px;
+    width: 20px;
+    height: 25px;
+}
+.h_info_b1 i {
+    margin-left: 8px;
+}
+.icon_crown_new {
+    /*background: url(../pic/icon2015-1.png?t=20161117152229) no-repeat;*/
+    background-position: -716px -147px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.h_info_b1 b {
+    margin-left: 8px;
+}
+.icon_elevel3{
+    background-position: -410px -120px;
+}
+.icon_stars {
+    width: 60px;
+    height: 10px;
+}
+.h_info_b2 {
+    margin-top: 8px;
+    max-height: 40px;
+    overflow: hidden;
+}
+.hotel_inf_sale {
+    overflow: hidden;
+    margin-top: 5px;
+}
+.h_comt_other {
+    padding-right: 5px;
+    white-space: nowrap;
+    float: left;
+}
+.h_comt_other span {
+    margin-left: 2px;
+}
+.icon_faci_s1, .icon_faci_s2, .icon_faci_s3, .icon_faci_s4, .icon_faci_s5, .icon_faci_s6, .icon_faci_s7, .icon_faci_s8, .icon_faci_s9,.icon_disc_cu ,.icon_land_map ,.icon_land_street{
+    width: 16px;
+    height: 17px;
+    display: inline-block;
+    background: url(../../img/beijing/icon2015-1.png) no-repeat;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.icon_faci_s1 {
+    background-position: 0 -4px;
+}
+.icon_faci_s2 {
+    background-position: -40px -4px;
+}
+.icon_faci_s3 {
+    background-position: -20px -4px;
+}
+.icon_faci_s4 {
+    background-position: -77px -4px;
+}
+.h_info_b3 i {
+    margin-right: 2px;
+    margin-top: 3px;
+}
+.icon_disc_cu {
+    width: 14px;
+    margin-top: 4px;
+}
+.icon_disc_cu {
+    width: 17px;
+    height: 14px;
+    background-position: -308px -178px;
+}
+.h_info_b4 {
+    margin-top: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #999;
+}
+.h_info_b4 .l1, .h_info_b4 .l2 {
+    height: 18px;
+    float: left;
+    line-height: 18px;
+    padding: 0 8px;
+    border: 1px solid #CDE;
+    cursor: pointer;
+    color: #555;
+}
+.h_info_b4 .l1 {
+    border-radius: 10px 0 0 10px;
+}
+.h_info_b4 span i {
+    margin-right: 4px;
+    vertical-align: -2px;
+}
+.icon_land_map {
+    width: 9px;
+    height: 12px;
+    background-position: -249px -6px;
+}
+.h_info_b4 .l2 {
+    border-radius: 0 10px 10px 0;
+    margin: 0 6px 0 -1px;
+}
+.icon_land_street {
+    width: 10px;
+    height: 12px;
+    background-position: -265px -6px;
+}

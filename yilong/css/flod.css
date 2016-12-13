@@ -1,0 +1,80 @@
+.flod{
+	width: 1200px;
+	height: 260px;
+	margin: 20px auto;
+}
+.flod ul{
+	width: 1200px;
+	height: 260px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+.flod ul:hover li{
+	width: 160px;
+}
+.flod ul li:hover{
+	width: 400px;
+}
+.flod ul li:hover .mask_b{
+	display: none;
+}
+.flod ul li{
+	float: left;
+	width: 200px;
+	height: 260px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	-webkit-transition: all 0.5s;
+}
+
+a{
+	text-decoration: none;
+	outline: none;
+}
+
+.mask_b{
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top:  10;
+	background: rgba(0,0,0,0.3);
+}
+
+.mask_b h4 {
+	width: 30px;
+	color: white;
+	margin: 0 auto;
+	display: block;
+	padding: 30px 0 0 0;
+	position: relative;
+	font: 30px/30px "微软雅黑";
+}
+.pic_auto{
+	width: 100%;
+	height: 100%;
+}
+.pic_auto1{
+	background: url(../img/flog/20150422_ifold1.jpg) no-repeat center 0;
+}
+
+.pic_auto2{
+	background: url(../img/flog/20150120_ifold3.jpg) no-repeat center 0;
+	
+}
+.pic_auto3{
+	background: url(../img/flog/20150120_ifold4.jpg) no-repeat center 0;
+}
+.pic_auto4{
+	background: url(../img/flog/20150120_ifold5.jpg) no-repeat center 0;
+}
+.pic_auto5{
+	background: url(../img/flog/20150120_ifold6.jpg) no-repeat center 0;
+}
+.pic_auto6{
+	background: url(../img/flog/20150120_ifold7.jpg) no-repeat center 0;
+}
+

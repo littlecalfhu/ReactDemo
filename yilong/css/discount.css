@@ -1,0 +1,81 @@
+.discount{
+	width: 1200px;
+	margin: 20px auto 0;
+	height: 264px;
+	font-family: "微软雅黑";
+}
+
+.discount h2{
+	color: #b73;
+	cursor: pointer;
+	border-bottom: 2px solid #b73;
+}
+
+.mt20{
+	margin-top: 20px;
+}
+.mt20 ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.tab_theme li{
+	float: left;
+	width: 288px;
+	padding: 0;
+	margin: 0 12px 0 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.pic_add{
+	height: 160px;
+	overflow: hidden;
+	width: 100%;
+}
+.tab_theme li img{
+	height: 170px;
+	display: block;
+	width: 100%;
+	cursor: pointer;
+	-webkit-transition: margin 0.4s;
+}
+.tab_theme li:hover .scale_tour{
+	border-bottom: 2px solid #b73;
+}
+.tab_theme li:hover img{
+	margin-top: -10px;
+}
+.tab_theme li .city_name{
+	position: absolute;
+	font: 24px/30px "微软雅黑";
+	top: 20px;
+	left: 0;
+	overflow: hidden;
+	text-indent: .5em;
+	color: white;
+}
+
+.tab_theme li .city_name span{
+	border-top: 1px solid white;
+	display: block;
+	font-size: 16px;
+	padding: 0 2px;
+	margin: 5px 0 0 10px;
+	text-indent: 0;
+}
+
+.tab_theme li .scale_tour{
+	height: 30px;
+	padding: 5px 15px;
+	background: #f7f7f7;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 1px;
+}
+
+.tab_theme li .scale_tour p{
+	color: #555;
+	font: 14px/20px "微软雅黑";
+}
+

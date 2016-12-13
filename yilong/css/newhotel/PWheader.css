@@ -1,0 +1,67 @@
+body,div{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url(../../img/newhotel/bg.jpg);
+}
+.PWheader{
+	width: 1349px;
+	height: 39px;
+	background: #FAFAFA;
+	border-bottom: 1px solid #e2e2e2;
+}
+.heaerInner{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.heaerInner .yilonglogo{
+	padding-top: 5px;
+	float: left;
+	overflow: hidden;
+}
+.heaerInner .yilonglogo a{
+	text-indent: -9999em;
+	background: url(../../img/newhotel/act_headerLogo.png) no-repeat;
+	display: block;
+	width: 128px;
+	height: 29px;
+}
+.heaerInner ul{
+	float: right;
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+.heaerInner ul li{
+	float: left;
+	line-height: 40px;
+	padding: 0 15px;
+	color: #555555;
+	overflow: hidden;
+	margin: 0;
+}
+.heaerInner .top li.line{
+	background: none;
+	padding: 0;
+	color: #E5E5E5;
+	line-height: 39px;
+}
+.heaerInner ul li a{
+	text-decoration: none;
+	color: #555555;
+	cursor: pointer;
+	font-size: 12px;
+	line-height: 40px;
+}
+.heaerInner .headerinnerlast{
+	font-size: 12px;
+	line-height: 40px;
+}
+.heaerInner .headerinnerlast span{
+	color: #FF8800;
+	cursor: help;
+}

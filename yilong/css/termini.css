@@ -1,0 +1,126 @@
+.termini{
+	width: 1200px;
+	margin: 20px auto 0;
+	height: 251px;
+	font-family: "微软雅黑";
+}
+.termini .rightmore{
+	position: absolute;
+	right: 100px;
+	top: 800px;
+	font-size: 14px;
+	width: 68px;
+	height: 20px;
+	cursor: pointer;
+}
+.rightmore a{
+	color: #555;
+}
+.rightmore:hover a{
+	color : red;
+}
+.termini h2{
+	color: #8c2;
+	cursor: pointer;
+	border-bottom: 2px solid #8c2;
+}
+
+.termini_com{
+	margin-top:18px ;
+	overflow: hidden;
+}
+
+.termini_com .termini_list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.termini_list li{
+	width: 33%;
+	height: 80px;
+	float: left;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #f1f1f1;
+	border-right: 1px solid #f1f1f1;
+}
+
+.termini_img{
+	background:url(../img/flog/hotel_index_icon.png) no-repeat 0 0;
+	width: 80px;
+	height: 80px;
+	float: left;
+	margin-left: 15px;
+}
+.termini_img span{
+	width: 80px;
+	background:url(../img/flog/hotel_index_icon.png) no-repeat 0 0;
+	display: inline-block;
+	height: 0px;
+	overflow: hidden;
+	-webkit-transition: height 0.5s;
+}
+.termini_img1 span{
+	background-position: -509px -100px;
+}
+.termini_img2 span{
+	background-position: -595px -100px;
+}
+.termini_img3 span{
+	background-position: -170px -100px;
+}
+.termini_img4 span{
+	background-position: -340px -100px;
+}
+.termini_img5 span{
+	background-position: -85px -100px;
+}
+.termini_img6 span{
+	background-position: -425px -100px;
+}
+.termini_img1{
+	background-position: -509px 0px;
+}
+.termini_img2{
+	background-position: -595px 0px;
+}
+.termini_img3{
+	background-position: -170px 0px;
+}
+.termini_img4{
+	background-position: -340px 0px;
+}
+.termini_img5{
+	background-position: -85px 0px;
+}
+.termini_img6{
+	background-position: -425px 0px;
+}
+.termini_name{
+	margin: 0 15px 0 110px;
+	height: 80px;
+	overflow: hidden;
+	padding: 0;
+}
+.termini_name dt{
+	color: #8c2;
+	margin: 3px 0 5px 4px;
+	font-size: 18px;
+}
+.termini_list dd{
+	margin: 0 5px 4px 0;
+	padding: 0 5px;
+	float: left;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.termini_list li:hover .termini_img span{
+	height: 80px;
+	-webkit-transition: height 0.5s;
+}
+
+.termini_list dd a:hover{
+	background: #8c2;
+}

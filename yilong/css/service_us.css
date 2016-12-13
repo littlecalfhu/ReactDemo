@@ -1,0 +1,121 @@
+.service_us{
+	width: 1200px;
+	height: 181px;
+	margin: 20px auto 0;
+	font-family: "微软雅黑";
+}
+.service_wrap{
+	margin: 0;
+	padding: 0;
+}
+.service_wrap .service_inf{
+	background: #F7F7F7;
+	height: 60px;
+	overflow: hidden;
+	padding: 20px;
+	border-bottom: 1px solid #e5e5e5;
+	color: #555;
+}
+.service_inf ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.service_inf ul li{
+	float: left;
+	width: 25%;
+	font:16px/60px "微软雅黑";
+}
+.service_inf ul li i{
+	background: url(../img/flog/hotel_index_icon.png) no-repeat 0 0;
+	display: inline-block;
+	float: left;
+	height: 60px;
+	width: 60px;
+	margin: 0 10px 0 0;
+}
+
+.service_inf ul li i.why_icon1{
+	background-position: -286px -218px;
+}
+.service_inf ul li i.why_icon2{
+	background-position: -354px -218px;
+}
+.service_inf ul li i.why_icon3{
+	background-position: -423px -218px;
+}
+.service_inf ul li i.why_icon4{
+	background-position: -490px -220px;
+}
+.service_inf ul li:hover i{
+	-webkit-animation: myicon 0.15s linear 4 alternate;
+}
+@-webkit-keyframes myicon{
+	from{
+		-webkit-transform: rotate(-20deg);
+	}
+	to{
+		-webkit-transform: rotate(20deg);
+	}
+}
+.booking_email{
+	height: 80px;
+	overflow: hidden;
+	background: #F7F7F7;
+}
+
+.booking_email .service_agreement{
+	line-height: 80px;
+	padding: 0 20px 0 0;
+	float: right;
+}
+
+.booking_email .service_agreement a{
+	color: #37d;
+	font: 14px/80px "微软雅黑";
+	cursor: pointer;
+}
+.booking_email .service_agreement a:hover{
+	color: red;
+	text-decoration: underline;
+}
+
+.booking_email .mail_icon{
+	background: url(../img/flog/hotel_index_icon.png) no-repeat 0 0;
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	background-position: -615px -208px;
+	-webkit-transition: width 0.5s ,background-position 0.5s;
+}
+.booking_email:hover .mail_icon{
+	width:110px ;
+	background-position: -585px -208px;
+}
+
+.booking_email .input_email{
+	width: 680px;
+	margin: 24px auto 0;
+}
+.input_email span {
+    font: 16px/30px Microsoft yahei;
+    color: #71829d;
+    padding: 0 5px;
+    float: left;
+}
+.input_email em input {
+    width: 200px;
+    height: 28px;
+    border: 1px solid #ccc;
+    color: #555;
+}
+.input_email b input {
+    width: 80px;
+    height: 30px;
+    background: #3377dd;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}

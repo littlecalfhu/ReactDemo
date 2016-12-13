@@ -1,0 +1,100 @@
+.footer{
+	width: 1349px;
+	height: 252px;
+	padding: 20px 0;
+	border-top: 1px solid #eee;
+	margin-top: 20px;
+}
+.footer_info{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+.footer_info dl{
+	float: left;
+	width: 18%;
+	padding-left: 7%;
+}
+.footer_info dt{
+	font: 18px/1 "微软雅黑";
+	padding: 0 0 0 10px;
+	border-left: 3px solid #5D96C7;
+	margin-bottom: 10px;
+}
+.footer_info dd{
+	padding-left: 14px;
+	line-height: 24px;
+	margin-left: 0;
+	font-family: "微软雅黑";
+}
+
+.footer_info dd a{
+	color: #333;
+	-webkit-transition: margin-left 0.5s;
+	font-size: 12px;
+	cursor: pointer;
+}
+.footer_info dd a:hover{
+	margin-left: 10px;
+}
+.pt10{
+	padding-top: 10px;
+}
+.footer_info dd i,.footer_safe a{
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	background: url(../img/footer/icon2015-0.png) no-repeat 0 0;
+	vertical-align: middle;
+	overflow: hidden;
+}
+.footer_info dd i.app{
+	background-position: -259px -56px;
+}
+.footer_info dd i.wx{
+	background-position: -362px -58px;
+}
+.footer_copy{
+	position: relative;
+	margin: 20px 0;
+	text-align: center;
+	font: 12px/20px "微软雅黑";
+}
+.footer_copy a{
+	cursor: pointer;
+}
+
+.footer_safe{
+	text-align: center;
+}
+.footer_safe a{
+	display: inline-block;
+	width: 80px;
+	line-height: 26px;
+	text-align: center;
+	height: 37px;
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	-webkit-transition: top 0.5s ;
+	margin:0 5px;
+}
+.footer_safe a.qua_1{
+	background-position: -329px -436px;
+}
+.footer_safe a:hover{
+	top:-10px;
+}
+.footer_safe a.qua_2{
+	background-position: -473px -436px;
+	width: 92px;
+}
+.footer_safe a.qua_3{
+	background-position: -565px -436px;
+	width: 92px;
+}
+.footer_safe a.qua_4{
+	background-position: -657px -436px;
+	width: 92px;
+}
