@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/babel">
+        class ShowData extends React.Component{
+            constructor(props){
+                super(props);
+                let data = new Date();
+                this.state = {
+                    data : data.getTime(),
+                    tempdata : 0 ,
+                    nowdata: 0
+                }
+            }
+            handleClick(e)
+            {
+                let data = new Date();
+                let tempData = data.getTime()-this.state.data;
+                this.setState({
+                    tempdata :tempData,
+                    data : data.getTime(),
+                    nowdata : data.toLocaleString()
+                })
+            }
+            render(){
+                return (
+                    <div>
+                        <button onClick={this.handleClick.bind(this)}>显示当前时间</button>
+                        <p>{this.state.nowdata}</p>
+                        <p>相隔的时间为:{this.state.tempdata/1000}秒</p>
+                    </div>
+                );
+            }
+        }
+
+        ReactDOM.render(
+            <ShowData/>,
+            document.getElementById('app')
+                );
+    </script>
+</body>
+</html>

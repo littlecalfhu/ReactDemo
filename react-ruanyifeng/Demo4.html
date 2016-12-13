@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/react-0.14.0.js" ></script>
+		<script type="text/javascript" src="js/react-dom.js" ></script>
+		<script type="text/javascript" src="js/browser.min.js" ></script>
+	</head>
+	<body>
+		<div id="example"></div>
+		<script type="text/babel">
+			var Hu = React.createClass(
+			{
+				render:function(){
+					return <h1>hello,{this.props.name}</h1>
+				}
+			}
+			);
+			ReactDOM.render(
+			<Hu name="huyifan"/>,
+			document.getElementById('example'));
+		</script>
+	</body>
+</html>

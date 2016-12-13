@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/react-0.14.0.js" ></script>
+		<script type="text/javascript" src="js/react-dom.js" ></script>
+		<script type="text/javascript" src="js/browser.min.js" ></script>
+	</head>
+	<body>
+		<div id="example"></div>
+		<script type="text/babel">
+			var HuGe = React.createClass({
+				render:function(){
+					return (
+						<ol>
+							{
+							      React.Children.map(this.props.children, function (child) {
+          						return <li>{child}</li>;
+        						})
+							}
+						</ol>
+					);
+				}
+			});
+			ReactDOM.render(
+			<HuGe>
+				<span>ll</span>
+				<span>qq</span>
+			</HuGe>,document.getElementById("example"));
+		</script>
+	</body>
+</html>

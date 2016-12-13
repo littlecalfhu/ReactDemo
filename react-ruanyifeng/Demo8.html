@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/babel">
+        class MyTitle extends React.Component{
+            constructor(props){
+                super(props);
+                this.state = {
+                    color : this.props.color
+                }
+            }
+            handleClick(){
+                this.setState(
+                    {
+                        color : 'yellow',
+                    }
+                );
+            }
+            render(){
+                return (
+                    <h1 style={{color:this.state.color}} onClick={this.handleClick.bind(this)}>{this.props.content}</h1>
+                );
+            }
+        }
+
+        ReactDOM.render(
+            <MyTitle color="red" content="为什么选我？"/>,
+            document.getElementById('app')
+        );
+    </script>
+</body>
+</html>

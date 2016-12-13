@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min.js"></script>
+
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/babel">
+       export default class Couter extends React.Component{
+            constructor(props){
+                super(props);
+                this.handleClick = this.handleClick.bind(this);
+                this.state={
+                    count :0,
+                }
+            }
+            handleClick(e){
+                e.preventDefault();
+                this.setState({
+                    count : this.state.count +1,
+                })
+            }
+            render(){
+                return (
+                    <div>
+                        <p>{this.state.count}</p>
+                        <a href="#" onClick={this.handleClick}>更新</a>
+                    </div>
+                );
+            }
+        }
+       ReactDOM.render(
+           <Couter/>,
+           document.getElementById('app')
+       )
+    </script>
+</body>
+</html>
