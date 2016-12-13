@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../build/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/products.css">
+    <script src="js/pro.js"></script>
+
+</head>
+<body>
+    <div id="page">
+        <div id="site-nav">
+            <div id="sn-bd">
+                <div class="sn-container">
+                    <p id="login-info" class="sn-login-info">
+                        <span class="sn-welcome-info">
+                            <span>hi,</span>
+                            <a href="" class="j_Username">tb654192949</a>
+                            <a href="" class="sn-identity">
+                                <span>T2</span>
+                            </a>
+                            <a href="" class="j_Point sn-point">
+                                积分
+                                <em class="sn-point-value">476</em>
+                            </a>
+                        </span>
+                        <span class="j-Message sn-message-cont">
+                            <span class="j_MessageCont">
+                                <a href="" class="menu-hd">
+                                    消息
+                                    <em class="sn-msg-num">32</em>
+                                </a>
+                            </span>
+                        </span>
+                        <span class="sn-welcome-info">
+                            <a href="" class="sn-logout">退出</a>
+                        </span>
+                    </p>
+                    <ul class="sn-quick-menu">
+                        <li class="menu-item">我的淘宝</li>
+                        <li>
+                            <i class="icon hongxin"></i>
+                            我关注的品牌</li>
+                        <li>购物车9件</li>
+                        <li>收藏夹</li>
+                        <li>|</li>
+                        <li>手机版</li>
+                        <li>淘宝网</li>
+                        <li>企业购</li>
+                        <li>商家支持</li>
+                        <li>网站导航</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="header tb-header">
+                <h1 id="logo" class="cart-logo">
+                    <a href="">
+                        淘宝网
+                        <span></span>
+                    </a>
+                </h1>
+                <div class="search">
+                    <div class="search-triggers">
+                        <ul class="ks-switchable-nav">
+                            <li class="slected">
+                                <a href="">宝贝</a>
+                            </li>
+                            <li>
+                                <a href="">天猫</a>
+                            </li>
+                            <li>
+                                <a href="">店铺</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search-panel .search-hp-panel">
+                        <form action="">
+                            <div class="search-button">
+                                <button class="btn-search" type="submit">搜索</button>
+                            </div>
+                            <div class="search-hp-fields search-panel-fields">
+                                <div class="search-combobox">
+                                    <div class="search-combobox-input-wrap">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <i></i>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-layout-TB">
+                <div class="cart">
+                    <div class="cart-filter-bar">
+                        <ul class="switch-cart">
+                            <li class="btn-switch-cart current">
+                                <a href="">
+                                    <em>全部商品</em>
+                                    <span class="number">3</span>
+                                    <span class="pipe"></span>
+                                </a>
+                            </li>
+                            <li class="btn-switch-cart">
+                                <a href="">
+                                    <em>降价商品</em>
+                                    <span class="number">0</span>
+                                    <span class="pipe"></span>
+                                </a>
+                            </li>
+                            <li class="btn-switch-cart">
+                                <a href="">
+                                    <em>库存紧张</em>
+                                    <span class="number">0</span>
+                                    <span class="pipe"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="cart-sum">
+                            <span class="pay-text">已选商品（不含运费）</span>
+                            <strong class="price">
+                                <em>
+                                    <span class="total-symbol">&nbsp;</span>
+                                    0.00
+                                </em>
+                            </strong>
+                            <a href="" class="submit-btn submit-btn-disabled">结&nbsp;算</a>
+                        </div>
+                        <div class="wrap-line">
+                            <div class="floater"></div>
+                        </div>
+                    </div>
+                    <div class="cart-main">
+                        <div class="cart-table-th">
+                            <div class="wp">
+                                <div class="th th-chk">
+                                    <div class="select-all">
+                                        <div class="cart-checkbox">
+                                            <input type="checkbox">
+                                            <label>勾选购物车中的所有商品</label>
+                                        </div>
+                                        &nbsp;&nbsp;全选
+                                    </div>
+                                </div>
+                                <div class="th th-item">
+                                    <div class="td-inner">商品信息</div>
+                                </div>
+                                <div class="th th-info">
+                                    <div class="td-inner">&nbsp;</div>
+                                </div>
+                                <div class="th th-price">
+                                    <div class="td-inner">单价</div>
+                                </div>
+                                <div class="th th-amount">
+                                    <div class="td-inner">数量</div>
+                                </div>
+                                <div class="th th-sum">
+                                    <div class="td-inner">金额</div>
+                                </div>
+                                <div class="th th-op">
+                                    <div class="td-inner">操作</div>
+                                </div>
+                                <div class="th th-vil"></div>
+                            </div>
+                        </div>
+                        <div class="productlist">
+                            <div class="productitem">
+                                <div class="productwrap1">
+                                    <div class="productwrap2">
+                                        <div class="shop clearfix">
+                                            <div class="shop-info">
+                                                <div class="cart-checkbox">
+                                                    <input type="checkbox">
+                                                    <label>勾选此店铺下所有商品</label>
+                                                </div>
+                                                &nbsp;&nbsp;
+                                                <span class="shop-icon icon-B"></span>
+                                                店铺：
+                                                <a href="">尼亚非数码专营</a>
+                                                <span class="ww-light ww-small">
+                                                    <a href="" class="ww-online"></a>
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                        <div class="order-content">
+                                            <div class="item-list">
+                                                <div class="bundle bundle-last">
+                                                    <div class="item-holder">
+                                                        <div class="item-body">
+                                                            <ul class="item-content clearfix">
+                                                                <li class="td td-chk">
+                                                                    <div class="td-inner">
+                                                                        <div class="cart-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <label></label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="td td-item">
+                                                                    <div class="td-inner">
+                                                                        <div class="item-pic">
+                                                                            <a href=""><img src="./img/TB2.svncVXXXXb_XXXXXXXXXXXX_!!2030401350.jpg_80x80.jpg" alt=""
+                                                                                             class="itempic"></a>
+                                                                        </div>
+                                                                        <div class="item-info">
+                                                                            <div class="item-basic-info">
+                                                                                <a href="" class="item-title">
+                                                                                    EIAOSI/伊奥思 X6金属入耳式耳机手机电脑MP3通用 重低音耳塞耳机
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="item-other-info">
+                                                                                <div class="promo-logos"></div>
+                                                                                <div class="item-icon-list clearfix">
+                                                                                    <div class="item-icons">
+                                                                                        <span class="item-icon item-icon-0">
+                                                                                            <img src="./img/xcard.png" alt="">
+                                                                                        </span>
+                                                                                        <a href="" class="item-icon">
+                                                                                            <img src="./img/T1Vyl6FCBlXXaSQP_X-16-16.png" alt="">
+                                                                                        </a>
+                                                                                        <a href=""
+                                                                                           class="item-icon">
+                                                                                            <img src="./img/T1BCidFrNlXXaSQP_X-16-16.png" alt="">
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </li>
+                                                                <li class="td td-info">
+                                                                    <div class="item-props">
+                                                                        <p class="sku-line">套餐类型：官方标配</p>
+                                                                        <p class="sku-line">颜色分类：黑色</p>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="td td-price">
+                                                                    <div class="td-inner">
+                                                                        <div class="item-price">
+                                                                            <div class="price-content">
+                                                                                <div class="price-line">
+                                                                                    <em class="price-original">￥68.00</em>
+                                                                                </div>
+                                                                                <div class="price-line">
+                                                                                    <em class="price-now">￥10.90</em>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="td td-amount">
+                                                                    <div class="td-inner">
+                                                                        <div class="amount-wrapper">
+                                                                            <div class="item-amount">
+                                                                                <a  class="no-minus">-</a>
+                                                                                <input type="text" value="1" class="text-amount">
+                                                                                <a  class="plus">+</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="td td-sum">
+                                                                    <div class="td-inner">
+                                                                        <em class="number">￥10.90</em>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="td td-op">
+                                                                    <div class="td-inner">
+                                                                        <a>删除</a>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="productitem">
+                                <div class="productwrap1">
+                                    <div class="productwrap2">
+                                        <div class="shop clearfix">
+                                            <div class="shop-info">
+                                                <div class="cart-checkbox">
+                                                    <input type="checkbox">
+                                                    <label>勾选此店铺下所有商品</label>
+                                                </div>
+                                                &nbsp;&nbsp;
+                                                <span class="shop-icon icon-B"></span>
+                                                店铺：
+                                                <a href="">施维茨十字广州专</a>
+                                                <span class="ww-light ww-small">
+                                                    <a href="" class="ww-online"></a>
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                        <div class="order-content">
+                                            <div class="item-list">
+                                                <div class="bundle bundle-last">
+                                                    <div class="item-holder">
+                                                        <div class="item-body">
+                                                            <ul class="item-content clearfix">
+                                                                <li class="td td-chk">
+                                                                    <div class="td-inner">
+                                                                        <div class="cart-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <label></label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="td td-item">
+                                                                    <div class="td-inner">
+                                                                        <div class="item-pic">
+                                                                            <a href=""><img src="./img/beibao.jpg" alt=""
+                                                                                            class="itempic"></a>
+                                                                        </div>
+                                                                        <div class="item-info">
+                                                                            <div class="item-basic-info">
+                                                                                <a href="" class="item-title">
+                                                                                    施维茨十字双肩包男士背包女韩版中学生书包旅行包休闲商务电脑包
+
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="item-other-info">
+                                                                                <div class="promo-logos"></div>
+                                                                                <div class="item-icon-list clearfix">
+                                                                                    <div class="item-icons">
+                                                                                        <span class="item-icon item-icon-0">
+                                                                                            <img src="./img/xcard.png" alt="">
+                                                                                        </span>
+                                                                                        <a href="" class="item-icon">
+                                                                                            <img src="./img/T1Vyl6FCBlXXaSQP_X-16-16.png" alt="">
+                                                                                        </a>
+                                                                                        <a href=""
+                                                                                           class="item-icon">
+                                                                                            <img src="./img/T1BCidFrNlXXaSQP_X-16-16.png" alt="">
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </li>
+                                                                <li class="td td-info">
+                                                                    <div class="item-props">
+                                                                        <p class="sku-line">颜色分类：黑色</p>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="td td-price">
+                                                                    <div class="td-inner">
+                                                                        <div class="item-price">
+                                                                            <div class="price-content">
+                                                                                <div class="price-line">
+                                                                                    <em class="price-original">￥508.00</em>
+                                                                                </div>
+                                                                                <div class="price-line">
+                                                                                    <em class="price-now">￥139.00</em>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="td td-amount">
+                                                                    <div class="td-inner">
+                                                                        <div class="amount-wrapper">
+                                                                            <div class="item-amount">
+                                                                                <a class="no-minus">-</a>
+                                                                                <input type="text" value="1" class="text-amount">
+                                                                                <a class="plus">+</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="td td-sum">
+                                                                    <div class="td-inner">
+                                                                        <em class="number">￥135.00</em>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="td td-op">
+                                                                    <div class="td-inner">
+                                                                        <a >删除</a>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="productitem">
+                                <div class="productwrap1">
+                                    <div class="productwrap2">
+                                        <div class="shop clearfix">
+                                            <div class="shop-info">
+                                                <div class="cart-checkbox">
+                                                    <input type="checkbox">
+                                                    <label>勾选此店铺下所有商品</label>
+                                                </div>
+                                                &nbsp;&nbsp;
+                                                <span class="shop-icon icon-B"></span>
+                                                店铺：
+                                                <a href="">润帛旗舰店</a>
+                                                <span class="ww-light ww-small">
+                                                    <a href="" class="ww-online"></a>
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                        <div class="order-content">
+                                            <div class="item-list">
+                                                <div class="bundle bundle-last">
+                                                    <div class="item-holder">
+                                                        <div class="item-body">
+                                                            <ul class="item-content clearfix">
+                                                                <li class="td td-chk">
+                                                                    <div class="td-inner">
+                                                                        <div class="cart-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <label></label>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="td td-item">
+                                                                    <div class="td-inner">
+                                                                        <div class="item-pic">
+                                                                            <a href=""><img src="./img/weijin.jpg" alt=""
+                                                                                            class="itempic"></a>
+                                                                        </div>
+                                                                        <div class="item-info">
+                                                                            <div class="item-basic-info">
+                                                                                <a href="" class="item-title">
+                                                                                    润帛 纯羊毛围巾女士春秋冬季酒红色韩国韩版纯色超长款披肩两用
+
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="item-other-info">
+                                                                                <div class="promo-logos"></div>
+                                                                                <div class="item-icon-list clearfix">
+                                                                                    <div class="item-icons">
+                                                                                        <span class="item-icon item-icon-0">
+                                                                                            <img src="./img/xcard.png" alt="">
+                                                                                        </span>
+                                                                                        <a href="" class="item-icon">
+                                                                                            <img src="./img/T1Vyl6FCBlXXaSQP_X-16-16.png" alt="">
+                                                                                        </a>
+                                                                                        <a href=""
+                                                                                           class="item-icon">
+                                                                                            <img src="./img/T1BCidFrNlXXaSQP_X-16-16.png" alt="">
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </li>
+                                                                <li class="td td-info">
+                                                                    <div class="item-props">
+                                                                        <p class="sku-line">颜色分类：红色</p>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="td td-price">
+                                                                    <div class="td-inner">
+                                                                        <div class="item-price">
+                                                                            <div class="price-content">
+                                                                                <div class="price-line">
+                                                                                    <em class="price-original">￥135.00</em>
+                                                                                </div>
+                                                                                <div class="price-line">
+                                                                                    <em class="price-now">￥69.00</em>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="td td-amount">
+                                                                    <div class="td-inner">
+                                                                        <div class="amount-wrapper">
+                                                                            <div class="item-amount">
+                                                                                <a  class="no-minus">-</a>
+                                                                                <input type="text" value="1" class="text-amount">
+                                                                                <a  class="plus">+</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="td td-sum">
+                                                                    <div class="td-inner">
+                                                                        <em class="number">￥69.00</em>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="td td-op">
+                                                                    <div class="td-inner">
+                                                                        <a >删除</a>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="float-bar-holder">
+                        <div class="float-bar">
+                            <div class="float-bar-wrapper clearfix">
+                                <div class="select-all">
+                                    <div class="cart-checkbox">
+                                        <input type="checkbox">
+                                        <label></label>
+                                    </div>&nbsp;全选
+                                </div>
+                                <div class="operations">
+                                    <a href="">删除</a>
+                                    <a href="">清除失效宝贝</a>
+                                    <a href="">收入收藏夹</a>
+                                    <a href="">分享</a>
+                                </div>
+                                <div class="float-bar-right">
+                                    <div class="amount-sum">
+                                        <span class="txt">已选商品</span>
+                                        <em>2</em>
+                                        <span class="txt">件</span>
+                                    </div>
+                                    <div class="price-sum">
+                                        <span class="txt">合计（不含运费）：</span>
+                                        <strong class="price">
+                                            <em>0.00</em>
+                                        </strong>
+                                        <div class="btn-area">
+                                            <a href="" class="submit-btn">
+                                                <span>结&nbsp;算</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
