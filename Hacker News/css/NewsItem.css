@@ -1,0 +1,49 @@
+.newsItem {
+    color: #828282;
+    margin-top: 5px;
+    align-items: baseline; /*设置横轴的对其方式为按文字对其*/
+    display: flex; /*设置为弹性盒模型*/
+}
+
+.newsItem-titleLink {
+    color: black;
+    font-size: 10pt;
+    text-decoration: none;
+}
+
+.newsItem-itemText {
+    flex-grow: 1; /*定义项目放大比例为1则在父容器变化时跟着变化*/
+}
+
+.newsItem-domain {
+    font-size: 8pt;
+    margin-left: 5px;
+}
+
+.newsItem-domain > a {
+    color: #828282;
+    text-decoration: none;
+}
+.newsItem-rank {
+    flex-basis: 25px; /*设置在未分配多余空间时 占主轴的空间*/
+    font-size: 10pt;
+    text-align: right;
+}
+
+.newsItem-vote {
+    flex-basis: 15px;
+    text-align: center;
+}
+
+.newsItem-subtext {
+    font-size: 7pt;
+}
+
+.newsItem-subtext > a {
+    color: #828282;
+    text-decoration: none;
+}
+
+.newsItem-subtext > a:hover {
+    text-decoration: underline;
+}
