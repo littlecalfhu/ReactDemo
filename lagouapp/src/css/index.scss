@@ -1,0 +1,557 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ ul{
+   list-style: none;
+ }
+@mixin footeritem{
+  height: 1rem;
+  flex: 1 1 auto;
+  font-size: 0.1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  img{
+    width: 0.5rem;
+  }
+}
+@mixin componyIcon($value){
+  width: 80%;
+  height: 80%;
+  margin: 0.45rem 0.3rem;
+  background: url("#{$value}") no-repeat;
+}
+@mixin messagestateitem(){
+  text-align: center;
+  flex: auto;
+  order:1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  .stateIcon{
+    flex: none;
+    order: 0;
+    border-radius: 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+  span{
+    display: block;
+    flex: none;
+    font-family: inherit;
+    font-size: 0.1rem;
+    color: #cccccc;
+    order: 1;
+    margin-top: 0.1rem;
+  }
+}
+.main{
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  font-family: "Microsoft YaHei UI";
+  .index{
+    width: 100%;
+    order: 0;
+    height: 10rem;
+    flex:auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    .header{
+      width: 100%;
+      order: 0;
+      height: 5rem;
+      flex: none;
+      position: relative;
+      ul{
+        width: 100%;
+        height: 100%;
+        .headerimgitem{
+          float: left;
+          width: 100%;
+          height: 100%;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .input{
+        position: absolute;
+        top: 0.4rem;
+        left: 1.2rem;
+        width: 8rem;
+        height: 0.8rem;
+        background-color: white;
+        border-radius: 1rem;
+        padding:0.1rem 0.5rem;
+      }
+      .iconlist{
+        position: absolute;
+        bottom: 0.3rem;
+
+      }
+    }
+    .content{
+      width: 100%;
+      order: 1;
+      flex:auto;
+      font-family: inherit;
+      overflow: scroll;
+      .ul_wrap{
+        overflow: scroll;
+        ul{
+          width: 100%;
+          list-style: none;
+          overflow: scroll;
+          li{
+            width: 100%;
+            height: 3rem;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            .img{
+              height: 100%;
+              order: 0;
+              flex: 0 0 3rem;
+              .componyIcon-icon1{
+                @include componyIcon("../img/index-content/1.png");
+              }
+              .componyIcon-icon2{
+                @include componyIcon("../img/index-content/2.JPG");
+              }
+              .componyIcon-icon3{
+                @include componyIcon("../img/index-content/3.jpg");
+              }
+              .componyIcon-icon4{
+                @include componyIcon("../img/index-content/4.png");
+              }
+              .componyIcon-icon5{
+                @include componyIcon("../img/index-content/5.png");
+              }
+            }
+            .title{
+              font-size: 0.1rem;
+              height: 100%;
+              order: 1;
+              flex: 1 1 auto;
+              border-bottom: 1px solid#ccc;
+              display: flex;
+              flex-flow: row nowrap;
+              justify-content: flex-start;
+              align-items: flex-start;
+              .titleitem{
+                order: 0;
+                flex: auto;
+                .work{
+                  font-weight: bold;
+                  margin-top: 0.45rem;
+                }
+                .company{
+                  margin-top: 0.12rem;
+                }
+                .address{
+                  margin-top: 0.24rem;
+                }
+                .people{
+                  margin-top: 0.12rem;
+                }
+              }
+              .timeandmoney{
+                height: 100%;
+                order: 1;
+                flex: 0 0 2rem;
+                .money{
+                  margin-top: 0.45rem;
+                  color: red;
+                }
+                .time{
+                  margin-top: 1rem;
+                  color: #cccccc;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .message{
+    background-color: #eeeeee;
+    order: 0;
+    width: 100%;
+    flex: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    .messagetitle{
+      background-color: #ffffff;
+      flex: 0 0 1.5rem;
+      width: 100%;
+      order: 0;
+      border-bottom: 1px solid #dddddd;
+      text-align: center;
+      font-size: 0.5rem;
+      font-weight: bold;
+      padding: 0.5rem;
+    }
+    .state{
+      background-color: #ffffff;
+      flex: 0 0 3rem;
+      width: 100%;
+      order: 1;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      .jlstate{
+        @include messagestateitem;
+      }
+      .zwstate{
+        @include messagestateitem;
+      }
+      .yzstate{
+        @include messagestateitem;
+      }
+    }
+    .messagelist{
+      width: 100%;
+      flex: auto;
+      order: 2;
+      ul{
+        width: 100%;
+        background-color: #ffffff;
+        margin-top: 0.2rem;
+        li{
+          height: 1.75rem;
+          width: 100%;
+          background-color: #ffffff;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: flex-start;
+          align-items: center;
+          .messageicon{
+            height: 100%;
+            flex: 0 0 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .img{
+              border-radius: 50%;
+              width: 1.3rem;
+              height: 1.3rem;
+              img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+              }
+            }
+          }
+          .messageComment{
+            height: 100%;
+            flex: auto;
+            border-bottom: 0.5px solid #cccccc;
+            .name{
+              margin-top: 0.2rem;
+              font-size: 0.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .yanzhi{
+    width: 100%;
+    flex: auto;
+    order: 0;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column nowrap;
+    .yanzhititle{
+      width: 100%;
+      background-color: #ffffff;
+      order: 1;
+      flex: 0 0 1.5rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-flow: row nowrap;
+      .speaks{
+        height: 100%;
+        order: 1;
+        flex: 0 0 20%;
+        img{
+          width: 0.6rem;
+          height: 0.6rem;
+          margin: 0.5rem;
+        }
+      }
+      .titlecontent{
+        order: 2;
+        flex: 0 0 60%;
+        text-align: center;
+        font-size: 0.6rem;
+      }
+      .people{
+        height: 100%;
+        order: 3;
+        flex: 0 0 20%;
+        img{
+          width: 0.6rem;
+          height: 0.6rem;
+          margin: 0.5rem;
+          float: right;
+        }
+      }
+    }
+    .yanzhibanner{
+      width: 100%;
+      order: 2;
+      flex: 0 0 4.5rem;
+      border-bottom: 1px solid white;
+      img{
+        width: 100%;
+      }
+    }
+    .yanzhilist{
+      width: 100%;
+      order: 3;
+      flex:auto;
+      overflow: scroll;
+      .yanzhihot{
+        width: 100%;
+        height: 1rem;
+        background-color: #ffffff;
+        font-size: 0.5rem;
+        img{
+          display: inline-block;
+          float: left;
+          width: 0.7rem;
+          height: 0.7rem;
+          margin: 0.2rem 0.3rem;
+        }
+        span{
+          height: 100%;
+          display: inline-block;
+          float: left;
+          line-height: 1rem;
+        }
+      }
+      .yanzhiitem{
+        width: 100%;
+        .yanzhiul{
+          width: 100%;
+          overflow: scroll;
+          .yanzhili{
+            margin-top: 0.3rem;
+            height: 6rem;
+            background-color: #ffffff;
+            display: flex;
+            flex-flow: column nowrap;
+            overflow: scroll;
+            .yanzhicontent{
+              width: 100%;
+              height: 100%;
+              .questionFrom{
+                padding-left: 0.3rem;
+                margin-top: 0.3rem;
+                font-size: 0.4rem;
+                color: #cccccc;
+                .project{
+                  font-size: 0.5rem;
+                  color: black;
+                }
+              }
+              .question{
+                span{
+                  padding: 0.3rem;
+                  font-size: 0.5rem;
+                  font-weight: bold;
+                }
+              }
+              .answerPeople{
+                margin-top: 0.5rem;
+                padding-left: 0.3rem;
+                font-size: 0.4rem;
+                color: black;
+                vertical-align: middle;
+                .answerimg{
+                  display: inline-block;
+                  width: 0.5rem;
+                  height: 0.5rem;
+                  vertical-align: middle;
+                  border-radius: 50%;
+                  overflow: hidden;
+                  img{
+                    border-radius: 50%;
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+                .answerPeopleName{
+                  vertical-align: middle;
+                }
+                .time{
+                  vertical-align: middle;
+                  float: right;
+                  margin-right: 1rem;
+                }
+              }
+              .answer{
+                padding: 0.5rem;
+                font-size: 0.4rem;
+                color: #cccccc;
+              }
+              .dianzan{
+                font-size: 0.4rem;
+                padding-left: 0.3rem;
+                line-height: 0.5rem;
+                img{
+                  vertical-align: baseline;
+                  width: 0.5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .my{
+    width: 100%;
+    order: 0;
+    flex: 1 1 auto;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+    align-items: center;
+    .myimg{
+      width: 100%;
+      flex: 0 0 5.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row nowrap;
+      background-color:#00a57f;
+      .titleimg{
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: 2.5rem;
+        height: 3.5rem;
+        img{
+          display: block;
+          width: auto;
+          height: 2.5rem;
+          border-radius: 50%;
+          background-color: white;
+          padding: 1px;
+        }
+        .name{
+          display: block;
+          width: auto;
+          height: 1rem;
+          font-size: 0.4rem;
+          text-align: center;
+          padding-top: 0.3rem;
+        }
+      }
+    }
+    .mymessage{
+      width: 100%;
+      flex: auto;
+      ul{
+        width: 100%;
+        .qq{
+          margin-top: 0.3rem;
+        }
+        li{
+          background-color: #ffffff;
+          width: 100%;
+          padding-left: 0.8rem;
+          height: 1.2rem;
+          margin: 0;
+          .wrap{
+            height: 100%;
+            border-bottom: 1px solid #cccccc;
+            .icon{
+              vertical-align: middle;
+              display: inline-block;
+              float: left;
+              width: 1.2rem;
+              height: 1.2rem;
+              line-height: 1.2rem;
+              img{
+                width: 100%;
+                height: 100%;
+                padding: 0.3rem;
+              }
+            }
+            .mytitle{
+              float: left;
+              display: inline-block;
+              line-height: 1.2rem;
+              font-size: 0.4rem;
+              font-weight: 300;
+            }
+            .myright{
+              width: 3rem;
+              vertical-align: baseline;
+              padding-top: 0.45rem;
+              height: 1.2rem;
+              display: inline-block;
+              float: right;
+              font-size: 0.3rem;
+              color: #cccccc;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer{
+    border-top:0.5px solid #cccccc;
+    width: 100%;
+    order: 1;
+    flex: 0 0 1.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffffff;
+    .indexButton{
+      @include footeritem;
+    }
+    .messageButton{
+      @include footeritem;
+    }
+    .speakWorkButton{
+      @include footeritem;
+    }
+    .myButton{
+      @include footeritem;
+    }
+  }
+}
+

@@ -1,0 +1,536 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul {
+  list-style: none; }
+
+.main {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  font-family: "Microsoft YaHei UI"; }
+  .main .index {
+    width: 100%;
+    order: 0;
+    height: 10rem;
+    flex: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden; }
+    .main .index .header {
+      width: 100%;
+      order: 0;
+      height: 5rem;
+      flex: none;
+      position: relative; }
+      .main .index .header ul {
+        width: 100%;
+        height: 100%; }
+        .main .index .header ul .headerimgitem {
+          float: left;
+          width: 100%;
+          height: 100%; }
+          .main .index .header ul .headerimgitem img {
+            width: 100%;
+            height: 100%; }
+      .main .index .header .input {
+        position: absolute;
+        top: 0.4rem;
+        left: 1.2rem;
+        width: 8rem;
+        height: 0.8rem;
+        background-color: white;
+        border-radius: 1rem;
+        padding: 0.1rem 0.5rem; }
+      .main .index .header .iconlist {
+        position: absolute;
+        bottom: 0.3rem; }
+    .main .index .content {
+      width: 100%;
+      order: 1;
+      flex: auto;
+      font-family: inherit;
+      overflow: scroll; }
+      .main .index .content .ul_wrap {
+        overflow: scroll; }
+        .main .index .content .ul_wrap ul {
+          width: 100%;
+          list-style: none;
+          overflow: scroll; }
+          .main .index .content .ul_wrap ul li {
+            width: 100%;
+            height: 3rem;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center; }
+            .main .index .content .ul_wrap ul li .img {
+              height: 100%;
+              order: 0;
+              flex: 0 0 3rem; }
+              .main .index .content .ul_wrap ul li .img .componyIcon-icon1 {
+                width: 80%;
+                height: 80%;
+                margin: 0.45rem 0.3rem;
+                background: url("../img/index-content/1.png") no-repeat; }
+              .main .index .content .ul_wrap ul li .img .componyIcon-icon2 {
+                width: 80%;
+                height: 80%;
+                margin: 0.45rem 0.3rem;
+                background: url("../img/index-content/2.JPG") no-repeat; }
+              .main .index .content .ul_wrap ul li .img .componyIcon-icon3 {
+                width: 80%;
+                height: 80%;
+                margin: 0.45rem 0.3rem;
+                background: url("../img/index-content/3.jpg") no-repeat; }
+              .main .index .content .ul_wrap ul li .img .componyIcon-icon4 {
+                width: 80%;
+                height: 80%;
+                margin: 0.45rem 0.3rem;
+                background: url("../img/index-content/4.png") no-repeat; }
+              .main .index .content .ul_wrap ul li .img .componyIcon-icon5 {
+                width: 80%;
+                height: 80%;
+                margin: 0.45rem 0.3rem;
+                background: url("../img/index-content/5.png") no-repeat; }
+            .main .index .content .ul_wrap ul li .title {
+              font-size: 0.1rem;
+              height: 100%;
+              order: 1;
+              flex: 1 1 auto;
+              border-bottom: 1px solid #cccccc;
+              display: flex;
+              flex-flow: row nowrap;
+              justify-content: flex-start;
+              align-items: flex-start; }
+              .main .index .content .ul_wrap ul li .title .titleitem {
+                order: 0;
+                flex: auto; }
+                .main .index .content .ul_wrap ul li .title .titleitem .work {
+                  font-weight: bold;
+                  margin-top: 0.45rem; }
+                .main .index .content .ul_wrap ul li .title .titleitem .company {
+                  margin-top: 0.12rem; }
+                .main .index .content .ul_wrap ul li .title .titleitem .address {
+                  margin-top: 0.24rem; }
+                .main .index .content .ul_wrap ul li .title .titleitem .people {
+                  margin-top: 0.12rem; }
+              .main .index .content .ul_wrap ul li .title .timeandmoney {
+                height: 100%;
+                order: 1;
+                flex: 0 0 2rem; }
+                .main .index .content .ul_wrap ul li .title .timeandmoney .money {
+                  margin-top: 0.45rem;
+                  color: red; }
+                .main .index .content .ul_wrap ul li .title .timeandmoney .time {
+                  margin-top: 1rem;
+                  color: #cccccc; }
+  .main .message {
+    background-color: #eeeeee;
+    order: 0;
+    width: 100%;
+    flex: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center; }
+    .main .message .messagetitle {
+      background-color: #ffffff;
+      flex: 0 0 1.5rem;
+      width: 100%;
+      order: 0;
+      border-bottom: 1px solid #dddddd;
+      text-align: center;
+      font-size: 0.5rem;
+      font-weight: bold;
+      padding: 0.5rem; }
+    .main .message .state {
+      background-color: #ffffff;
+      flex: 0 0 3rem;
+      width: 100%;
+      order: 1;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center; }
+      .main .message .state .jlstate {
+        text-align: center;
+        flex: auto;
+        order: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center; }
+        .main .message .state .jlstate .stateIcon {
+          flex: none;
+          order: 0;
+          border-radius: 50%;
+          width: 1.2rem;
+          height: 1.2rem; }
+          .main .message .state .jlstate .stateIcon img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%; }
+        .main .message .state .jlstate span {
+          display: block;
+          flex: none;
+          font-family: inherit;
+          font-size: 0.1rem;
+          color: #cccccc;
+          order: 1;
+          margin-top: 0.1rem; }
+      .main .message .state .zwstate {
+        text-align: center;
+        flex: auto;
+        order: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center; }
+        .main .message .state .zwstate .stateIcon {
+          flex: none;
+          order: 0;
+          border-radius: 50%;
+          width: 1.2rem;
+          height: 1.2rem; }
+          .main .message .state .zwstate .stateIcon img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%; }
+        .main .message .state .zwstate span {
+          display: block;
+          flex: none;
+          font-family: inherit;
+          font-size: 0.1rem;
+          color: #cccccc;
+          order: 1;
+          margin-top: 0.1rem; }
+      .main .message .state .yzstate {
+        text-align: center;
+        flex: auto;
+        order: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center; }
+        .main .message .state .yzstate .stateIcon {
+          flex: none;
+          order: 0;
+          border-radius: 50%;
+          width: 1.2rem;
+          height: 1.2rem; }
+          .main .message .state .yzstate .stateIcon img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%; }
+        .main .message .state .yzstate span {
+          display: block;
+          flex: none;
+          font-family: inherit;
+          font-size: 0.1rem;
+          color: #cccccc;
+          order: 1;
+          margin-top: 0.1rem; }
+    .main .message .messagelist {
+      width: 100%;
+      flex: auto;
+      order: 2; }
+      .main .message .messagelist ul {
+        width: 100%;
+        background-color: #ffffff;
+        margin-top: 0.2rem; }
+        .main .message .messagelist ul li {
+          height: 1.75rem;
+          width: 100%;
+          background-color: #ffffff;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: flex-start;
+          align-items: center; }
+          .main .message .messagelist ul li .messageicon {
+            height: 100%;
+            flex: 0 0 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .main .message .messagelist ul li .messageicon .img {
+              border-radius: 50%;
+              width: 1.3rem;
+              height: 1.3rem; }
+              .main .message .messagelist ul li .messageicon .img img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%; }
+          .main .message .messagelist ul li .messageComment {
+            height: 100%;
+            flex: auto;
+            border-bottom: 0.5px solid #cccccc; }
+            .main .message .messagelist ul li .messageComment .name {
+              margin-top: 0.2rem;
+              font-size: 0.4rem; }
+  .main .yanzhi {
+    width: 100%;
+    flex: auto;
+    order: 0;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column nowrap; }
+    .main .yanzhi .yanzhititle {
+      width: 100%;
+      background-color: #ffffff;
+      order: 1;
+      flex: 0 0 1.5rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-flow: row nowrap; }
+      .main .yanzhi .yanzhititle .speaks {
+        height: 100%;
+        order: 1;
+        flex: 0 0 20%; }
+        .main .yanzhi .yanzhititle .speaks img {
+          width: 0.6rem;
+          height: 0.6rem;
+          margin: 0.5rem; }
+      .main .yanzhi .yanzhititle .titlecontent {
+        order: 2;
+        flex: 0 0 60%;
+        text-align: center;
+        font-size: 0.6rem; }
+      .main .yanzhi .yanzhititle .people {
+        height: 100%;
+        order: 3;
+        flex: 0 0 20%; }
+        .main .yanzhi .yanzhititle .people img {
+          width: 0.6rem;
+          height: 0.6rem;
+          margin: 0.5rem;
+          float: right; }
+    .main .yanzhi .yanzhibanner {
+      width: 100%;
+      order: 2;
+      flex: 0 0 4.5rem;
+      border-bottom: 1px solid white; }
+      .main .yanzhi .yanzhibanner img {
+        width: 100%; }
+    .main .yanzhi .yanzhilist {
+      width: 100%;
+      order: 3;
+      flex: auto;
+      overflow: scroll; }
+      .main .yanzhi .yanzhilist .yanzhihot {
+        width: 100%;
+        height: 1rem;
+        background-color: #ffffff;
+        font-size: 0.5rem; }
+        .main .yanzhi .yanzhilist .yanzhihot img {
+          display: inline-block;
+          float: left;
+          width: 0.7rem;
+          height: 0.7rem;
+          margin: 0.2rem 0.3rem; }
+        .main .yanzhi .yanzhilist .yanzhihot span {
+          height: 100%;
+          display: inline-block;
+          float: left;
+          line-height: 1rem; }
+      .main .yanzhi .yanzhilist .yanzhiitem {
+        width: 100%; }
+        .main .yanzhi .yanzhilist .yanzhiitem .yanzhiul {
+          width: 100%;
+          overflow: scroll; }
+          .main .yanzhi .yanzhilist .yanzhiitem .yanzhiul .yanzhili {
+            margin-top: 0.3rem;
+            height: 6rem;
+            background-color: #ffffff;
+            display: flex;
+            flex-flow: column nowrap;
+            overflow: scroll; }
+            .main .yanzhi .yanzhilist .yanzhiitem .yanzhiul .yanzhili .yanzhicontent {
+              width: 100%;
+              height: 100%; }
+              .main .yanzhi .yanzhilist .yanzhiitem .yanzhiul .yanzhili .yanzhicontent .questionFrom {
+                padding-left: 0.3rem;
+                margin-top: 0.3rem;
+                font-size: 0.4rem;
+                color: #cccccc; }
+                .main .yanzhi .yanzhilist .yanzhiitem .yanzhiul .yanzhili .yanzhicontent .questionFrom .project {
+                  font-size: 0.5rem;
+                  color: black; }
+              .main .yanzhi .yanzhilist .yanzhiitem .yanzhiul .yanzhili .yanzhicontent .question span {
+                padding: 0.3rem;
+                font-size: 0.5rem;
+                font-weight: bold; }
+              .main .yanzhi .yanzhilist .yanzhiitem .yanzhiul .yanzhili .yanzhicontent .answerPeople {
+                margin-top: 0.5rem;
+                padding-left: 0.3rem;
+                font-size: 0.4rem;
+                color: black;
+                vertical-align: middle; }
+                .main .yanzhi .yanzhilist .yanzhiitem .yanzhiul .yanzhili .yanzhicontent .answerPeople .answerimg {
+                  display: inline-block;
+                  width: 0.5rem;
+                  height: 0.5rem;
+                  vertical-align: middle;
+                  border-radius: 50%;
+                  overflow: hidden; }
+                  .main .yanzhi .yanzhilist .yanzhiitem .yanzhiul .yanzhili .yanzhicontent .answerPeople .answerimg img {
+                    border-radius: 50%;
+                    width: 100%;
+                    height: 100%; }
+                .main .yanzhi .yanzhilist .yanzhiitem .yanzhiul .yanzhili .yanzhicontent .answerPeople .answerPeopleName {
+                  vertical-align: middle; }
+                .main .yanzhi .yanzhilist .yanzhiitem .yanzhiul .yanzhili .yanzhicontent .answerPeople .time {
+                  vertical-align: middle;
+                  float: right;
+                  margin-right: 1rem; }
+              .main .yanzhi .yanzhilist .yanzhiitem .yanzhiul .yanzhili .yanzhicontent .answer {
+                padding: 0.5rem;
+                font-size: 0.4rem;
+                color: #cccccc; }
+              .main .yanzhi .yanzhilist .yanzhiitem .yanzhiul .yanzhili .yanzhicontent .dianzan {
+                font-size: 0.4rem;
+                padding-left: 0.3rem;
+                line-height: 0.5rem; }
+                .main .yanzhi .yanzhilist .yanzhiitem .yanzhiul .yanzhili .yanzhicontent .dianzan img {
+                  vertical-align: baseline;
+                  width: 0.5rem; }
+  .main .my {
+    width: 100%;
+    order: 0;
+    flex: 1 1 auto;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+    align-items: center; }
+    .main .my .myimg {
+      width: 100%;
+      flex: 0 0 5.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row nowrap;
+      background-color: #00a57f; }
+      .main .my .myimg .titleimg {
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: 2.5rem;
+        height: 3.5rem; }
+        .main .my .myimg .titleimg img {
+          display: block;
+          width: auto;
+          height: 2.5rem;
+          border-radius: 50%;
+          background-color: white;
+          padding: 1px; }
+        .main .my .myimg .titleimg .name {
+          display: block;
+          width: auto;
+          height: 1rem;
+          font-size: 0.4rem;
+          text-align: center;
+          padding-top: 0.3rem; }
+    .main .my .mymessage {
+      width: 100%;
+      flex: auto; }
+      .main .my .mymessage ul {
+        width: 100%; }
+        .main .my .mymessage ul .qq {
+          margin-top: 0.3rem; }
+        .main .my .mymessage ul li {
+          background-color: #ffffff;
+          width: 100%;
+          padding-left: 0.8rem;
+          height: 1.2rem;
+          margin: 0; }
+          .main .my .mymessage ul li .wrap {
+            height: 100%;
+            border-bottom: 1px solid #cccccc; }
+            .main .my .mymessage ul li .wrap .icon {
+              vertical-align: middle;
+              display: inline-block;
+              float: left;
+              width: 1.2rem;
+              height: 1.2rem;
+              line-height: 1.2rem; }
+              .main .my .mymessage ul li .wrap .icon img {
+                width: 100%;
+                height: 100%;
+                padding: 0.3rem; }
+            .main .my .mymessage ul li .wrap .mytitle {
+              float: left;
+              display: inline-block;
+              line-height: 1.2rem;
+              font-size: 0.4rem;
+              font-weight: 300; }
+            .main .my .mymessage ul li .wrap .myright {
+              width: 3rem;
+              vertical-align: baseline;
+              padding-top: 0.45rem;
+              height: 1.2rem;
+              display: inline-block;
+              float: right;
+              font-size: 0.3rem;
+              color: #cccccc;
+              text-align: center; }
+  .main .footer {
+    border-top: 0.5px solid #cccccc;
+    width: 100%;
+    order: 1;
+    flex: 0 0 1.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffffff; }
+    .main .footer .indexButton {
+      height: 1rem;
+      flex: 1 1 auto;
+      font-size: 0.1rem;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-end;
+      align-items: center; }
+      .main .footer .indexButton img {
+        width: 0.5rem; }
+    .main .footer .messageButton {
+      height: 1rem;
+      flex: 1 1 auto;
+      font-size: 0.1rem;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-end;
+      align-items: center; }
+      .main .footer .messageButton img {
+        width: 0.5rem; }
+    .main .footer .speakWorkButton {
+      height: 1rem;
+      flex: 1 1 auto;
+      font-size: 0.1rem;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-end;
+      align-items: center; }
+      .main .footer .speakWorkButton img {
+        width: 0.5rem; }
+    .main .footer .myButton {
+      height: 1rem;
+      flex: 1 1 auto;
+      font-size: 0.1rem;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-end;
+      align-items: center; }
+      .main .footer .myButton img {
+        width: 0.5rem; }
